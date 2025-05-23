@@ -26,6 +26,24 @@ const waitWindowLoad: Promise<void> = new Promise((resolve: () => void) => {
 
 await waitWindowLoad;
 
+// Wait for user to click "Log In using Wallet"
+await new Promise<void>((resolve) => {
+  const loginBtn = document.getElementById("wallet-login-btn");
+  if (loginBtn) {
+    loginBtn.addEventListener("click", () => {
+      // Hide landing page and show canvas
+      const landing = document.getElementById("landing-page");
+      const canvas = document.getElementById("canvas") as HTMLCanvasElement;
+      if (canvas) canvas.style.display = "block";
+      if (landing) landing.style.display = "none";
+      resolve();
+    });
+  } else {
+    resolve(); // Fallback in case button is not found
+  }
+});
+
+
 /* wle:auto-constants:start */
 const Constants = {
     ProjectName: 'SSIverse_University_Campus',
