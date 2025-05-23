@@ -175,24 +175,32 @@
                     "type": "light",
                     "light": {
                         "color": [
-                            0.3921568,
-                            0.329466,
-                            0.1384083
+                            1.0,
+                            1.0,
+                            1.0
                         ],
-                        "type": "sun"
-                    }
+                        "type": "sun",
+                        "shadows": true,
+                        "shadowRange": 100.0
+                    },
+                    "active": true
                 }
             ],
             "translation": [
-                0.0,
-                20.0000514,
-                0.0
+                -46.5368576,
+                6.3418769,
+                -87.7288894
             ],
             "rotation": [
-                -0.2156182,
-                0.0850898,
-                0.0188639,
-                0.9725804
+                -0.3298064,
+                0.1120095,
+                0.3170359,
+                0.8821393
+            ],
+            "scaling": [
+                1.0,
+                0.9999998,
+                1.0
             ]
         },
         "8cd24f76-f5f3-4f30-9742-2ac04ef0cc16": {
@@ -208,7 +216,8 @@
                             0.3368116
                         ],
                         "type": "sun"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
@@ -784,7 +793,7 @@
             "translation": [
                 -0.25,
                 -0.9166666,
-                -4.2219962637091164e-8
+                -4.221996263709117e-8
             ],
             "scaling": [
                 62.5,
@@ -2965,7 +2974,37 @@
                 "name": "mid_building<buildingd_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
             },
-            "parent": "312bdb40-a9c3-4516-a112-3a43b5125eb6"
+            "parent": "312bdb40-a9c3-4516-a112-3a43b5125eb6",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "1ddf21dd-fec6-44cd-8a32-37b2c729fc5d",
+                        "mesh": "d94a74c5-7b85-4491-8516-51f882b42991"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "1bd13533-4cd6-47c7-bd01-0adbf8d2bff1",
+                        "mesh": "482b7d89-0ddd-491f-82c1-140dd46f8f89"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "0cf373f1-4252-418f-8eb2-fe5acff9d498",
+                        "mesh": "b54e5c41-252c-440f-8b14-fea5c2cdbbfc"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "50e9547e-e87e-4c4e-a826-50620106eb0b",
+                        "mesh": "1b97aaa5-fd77-4f35-9b59-7349b3363334"
+                    }
+                }
+            ]
         },
         "1a864412-2c43-437e-b1e1-04ab65fb58e9": {
             "link": {
@@ -3023,7 +3062,8 @@
                 "name": "grass_pane1<base_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
             },
-            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e"
+            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e",
+            "hiddenForLightBaking": false
         },
         "84675669-f86c-4b8c-b90f-66ad67c2973f": {
             "link": {
@@ -4127,24 +4167,105 @@
             "link": {
                 "name": "roof_white_shd",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
             }
         },
         "1bd13533-4cd6-47c7-bd01-0adbf8d2bff1": {
             "link": {
                 "name": "walls_shd",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.8509804,
+                    0.8156862,
+                    0.690196,
+                    1.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "shininess": 2
             }
         },
         "0cf373f1-4252-418f-8eb2-fe5acff9d498": {
             "link": {
                 "name": "windows_shd",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.3098039,
+                    0.3098039,
+                    0.3098039,
+                    1.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
             }
         },
         "50e9547e-e87e-4c4e-a826-50620106eb0b": {
             "link": {
                 "name": "pavement_shd",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.2705882,
+                    0.2705882,
+                    0.2705882,
+                    1.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
             }
         },
         "592ac121-3aa7-4e63-acbf-ded646b1af4c": {
@@ -4163,6 +4284,26 @@
             "link": {
                 "name": "grass_shd",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.2823529,
+                    0.4588235,
+                    0.2039215,
+                    1.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
             }
         },
         "a90d6b77-6005-4c6a-8ade-8fdba417107b": {
@@ -4170,6 +4311,13 @@
                 "name": "floor_shd",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
             }
+        },
+        "8630d386-501a-493a-9039-85a229a9135c": {
+            "link": {
+                "name": "roof_white_shd",
+                "file": "assets\\university-campus\\source\\basic_campus.fbx"
+            },
+            "name": "roof_white_shd Copy"
         }
     },
     "animations": {},
@@ -4379,6 +4527,10 @@
                 1.0,
                 0.8705882,
                 1.0
+            ],
+            "compressedTextureAtlasSize": [
+                32768,
+                16384
             ]
         },
         "xr": {
@@ -4394,7 +4546,7 @@
         "editor": {
             "camera": {
                 "near": 0.0099999,
-                "far": 1000.0
+                "far": 1500.0
             },
             "ids": "uuid"
         },
