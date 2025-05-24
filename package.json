@@ -15,6 +15,7 @@
     "@wonderlandengine/components": "^1.2.3",
     "gl-matrix": "^3.4.3",
     "howler": "^2.2.4",
+    "qrcode": "^1.5.4",
     "wle-pp": "0.8.2"
   },
   "devDependencies": {
