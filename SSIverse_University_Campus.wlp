@@ -47,7 +47,8 @@
                     "pp-player-locomotion": {
                         "_myPhysicsBlockLayerFlags": "0, 1, 0, 0, 0, 0, 0, 0",
                         "_myTeleportValidMaterial": "90348bdc-8768-4244-9398-b89361708289",
-                        "_myTeleportInvalidMaterial": "6c7363ad-f7ee-465b-9031-541e40292fff"
+                        "_myTeleportInvalidMaterial": "6c7363ad-f7ee-465b-9031-541e40292fff",
+                        "_myMaxSpeed": 10.0
                     }
                 }
             ],
@@ -83,7 +84,10 @@
             "parent": "8be78c73-85be-4c1e-8f67-fd89305ab2ae",
             "components": [
                 {
-                    "type": "view"
+                    "type": "view",
+                    "view": {
+                        "far": 300.0
+                    }
                 },
                 {
                     "type": "mouse-look"
@@ -138,7 +142,10 @@
             "parent": "be12c4ed-e083-4ba0-b305-1e17ca69fe19",
             "components": [
                 {
-                    "type": "view"
+                    "type": "view",
+                    "view": {
+                        "far": 300.0
+                    }
                 },
                 {
                     "type": "input",
@@ -153,7 +160,10 @@
             "parent": "be12c4ed-e083-4ba0-b305-1e17ca69fe19",
             "components": [
                 {
-                    "type": "view"
+                    "type": "view",
+                    "view": {
+                        "far": 300.0
+                    }
                 },
                 {
                     "type": "input",
@@ -821,7 +831,7 @@
                         "shape": "box",
                         "box": {
                             "extents": [
-                                7.5,
+                                75.0,
                                 5.0,
                                 1.0
                             ]
@@ -831,16 +841,29 @@
                         "gravity": false,
                         "static": true
                     },
-                    "active": false
+                    "active": true
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "p1",
+                        "material": "e4810049-c035-44a6-b352-6d4bbaf3dfb0"
+                    }
                 }
             ],
             "translation": [
                 0.0,
                 5.0,
-                -13.0
+                -104.031845
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
             ],
             "scaling": [
-                7.5,
+                75.0,
                 5.0,
                 1.0
             ]
@@ -855,7 +878,7 @@
                         "shape": "box",
                         "box": {
                             "extents": [
-                                7.5,
+                                75.0,
                                 5.0,
                                 1.0
                             ]
@@ -865,17 +888,30 @@
                         "gravity": false,
                         "static": true
                     },
-                    "active": false
+                    "active": true
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "p1",
+                        "material": "e4810049-c035-44a6-b352-6d4bbaf3dfb0"
+                    }
                 }
             ],
             "translation": [
-                0.0,
+                0.6763882,
                 5.0,
-                13.0
+                104.0230331
             ],
             "scaling": [
-                7.5,
+                75.0,
                 5.0,
+                1.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
                 1.0
             ]
         },
@@ -889,7 +925,7 @@
                         "shape": "box",
                         "box": {
                             "extents": [
-                                14.0,
+                                104.0,
                                 5.0,
                                 1.0
                             ]
@@ -899,24 +935,31 @@
                         "gravity": false,
                         "static": true
                     },
-                    "active": false
+                    "active": true
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "p1",
+                        "material": "e4810049-c035-44a6-b352-6d4bbaf3dfb0"
+                    }
                 }
             ],
             "translation": [
-                8.5,
-                5.0006198,
-                0.0
+                74.0373535,
+                5.0006189,
+                0.0000076
             ],
             "rotation": [
                 0.0,
-                0.7071068,
+                0.7071066,
                 0.0,
                 0.7071068
             ],
             "scaling": [
-                14.0,
+                104.0,
                 5.0,
-                1.0
+                0.9999842
             ]
         },
         "be6b03c7-8d20-4d59-85de-a58d6b69d5ab": {
@@ -929,7 +972,7 @@
                         "shape": "box",
                         "box": {
                             "extents": [
-                                14.0,
+                                104.0,
                                 5.0,
                                 1.0
                             ]
@@ -939,24 +982,31 @@
                         "gravity": false,
                         "static": true
                     },
-                    "active": false
+                    "active": true
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "p1",
+                        "material": "e4810049-c035-44a6-b352-6d4bbaf3dfb0"
+                    }
                 }
             ],
             "translation": [
-                -8.5,
-                5.0002169,
-                0.0
+                -73.9140777,
+                5.0002155,
+                0.0000038
             ],
             "rotation": [
                 0.0,
-                0.7071068,
+                -0.7009092,
                 0.0,
-                0.7071068
+                0.7132504
             ],
             "scaling": [
-                14.0,
+                104.0,
                 5.0,
-                1.0
+                0.9999932
             ]
         },
         "62bb96e5-dca3-4608-8f0c-c546219e5bdc": {
@@ -4318,6 +4368,34 @@
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
             },
             "name": "roof_white_shd Copy"
+        },
+        "e4810049-c035-44a6-b352-6d4bbaf3dfb0": {
+            "link": {
+                "name": "walls_shd",
+                "file": "assets\\university-campus\\source\\basic_campus.fbx"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.5411764,
+                    0.5062367,
+                    0.3820068,
+                    1.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "shininess": 2
+            },
+            "name": "boundary_walls_shd"
         }
     },
     "animations": {},
