@@ -2989,94 +2989,6 @@
                 0.0099995
             ]
         },
-        "7d675323-df27-4ab7-9422-d93449273cfc": {
-            "link": {
-                "name": "geo_grp",
-                "file": "assets\\university-campus\\source\\basic_campus.fbx"
-            },
-            "parent": "ea2d149d-d18c-4968-afde-0b9c1f7ecd3f",
-            "translation": [
-                0.0,
-                0.1,
-                -0.3
-            ],
-            "rotation": [
-                0.0,
-                0.7071068,
-                0.0,
-                0.7071068
-            ],
-            "scaling": [
-                1.2,
-                1.2,
-                1.2
-            ]
-        },
-        "312bdb40-a9c3-4516-a112-3a43b5125eb6": {
-            "link": {
-                "name": "buildingd_grp<geo_grp",
-                "file": "assets\\university-campus\\source\\basic_campus.fbx"
-            },
-            "parent": "7d675323-df27-4ab7-9422-d93449273cfc"
-        },
-        "41cee9be-128e-49d1-b026-159a9a4e5170": {
-            "link": {
-                "name": "mid_building<buildingd_grp<geo_grp",
-                "file": "assets\\university-campus\\source\\basic_campus.fbx"
-            },
-            "parent": "312bdb40-a9c3-4516-a112-3a43b5125eb6",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "material": "1ddf21dd-fec6-44cd-8a32-37b2c729fc5d",
-                        "mesh": "d94a74c5-7b85-4491-8516-51f882b42991"
-                    }
-                },
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "material": "1bd13533-4cd6-47c7-bd01-0adbf8d2bff1",
-                        "mesh": "482b7d89-0ddd-491f-82c1-140dd46f8f89"
-                    }
-                },
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "material": "0cf373f1-4252-418f-8eb2-fe5acff9d498",
-                        "mesh": "b54e5c41-252c-440f-8b14-fea5c2cdbbfc"
-                    }
-                },
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "material": "50e9547e-e87e-4c4e-a826-50620106eb0b",
-                        "mesh": "1b97aaa5-fd77-4f35-9b59-7349b3363334"
-                    }
-                }
-            ]
-        },
-        "1a864412-2c43-437e-b1e1-04ab65fb58e9": {
-            "link": {
-                "name": "third_building<buildingd_grp<geo_grp",
-                "file": "assets\\university-campus\\source\\basic_campus.fbx"
-            },
-            "parent": "312bdb40-a9c3-4516-a112-3a43b5125eb6"
-        },
-        "176e06cf-f0b3-49ae-a275-6dba8c3cfada": {
-            "link": {
-                "name": "small_building<buildingd_grp<geo_grp",
-                "file": "assets\\university-campus\\source\\basic_campus.fbx"
-            },
-            "parent": "312bdb40-a9c3-4516-a112-3a43b5125eb6"
-        },
-        "cd499758-c749-4837-bccd-3a78693bd5da": {
-            "link": {
-                "name": "parking_shade<buildingd_grp<geo_grp",
-                "file": "assets\\university-campus\\source\\basic_campus.fbx"
-            },
-            "parent": "312bdb40-a9c3-4516-a112-3a43b5125eb6"
-        },
         "25b3b2d1-732c-46de-b291-447badc43e2e": {
             "link": {
                 "name": "base_grp<geo_grp",
@@ -3258,6 +3170,64 @@
         "9349ca93-6047-45d7-91b3-2db7b741e11f": {
             "name": "Base",
             "parent": "ea2d149d-d18c-4968-afde-0b9c1f7ecd3f"
+        },
+        "ad681b94-529f-4134-aa47-815634c1f889": {
+            "link": {
+                "name": "geo_grp",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            },
+            "translation": [
+                0.0,
+                0.1,
+                -0.3
+            ],
+            "rotation": [
+                -2.6692548615869782e-8,
+                0.7071068,
+                2.669255039222662e-8,
+                0.7071067
+            ],
+            "scaling": [
+                1.2000001,
+                1.2,
+                1.2000001
+            ],
+            "parent": "ea2d149d-d18c-4968-afde-0b9c1f7ecd3f"
+        },
+        "f9561029-da92-4eae-a7f6-0fae0be25dd1": {
+            "link": {
+                "name": "buildingd_grp<geo_grp",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            },
+            "parent": "ad681b94-529f-4134-aa47-815634c1f889"
+        },
+        "330adfd5-80e6-4193-88ec-128b2cda93a8": {
+            "link": {
+                "name": "mid_building<buildingd_grp<geo_grp",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            },
+            "parent": "f9561029-da92-4eae-a7f6-0fae0be25dd1"
+        },
+        "47ea9d94-e9bd-4119-9007-5da45e837b3e": {
+            "link": {
+                "name": "parking_shade<buildingd_grp<geo_grp",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            },
+            "parent": "f9561029-da92-4eae-a7f6-0fae0be25dd1"
+        },
+        "c37656ac-f1db-416f-b6e8-eefcfc909977": {
+            "link": {
+                "name": "small_building<buildingd_grp<geo_grp",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            },
+            "parent": "f9561029-da92-4eae-a7f6-0fae0be25dd1"
+        },
+        "6c5d5d04-907a-423e-a417-75c471fa92bc": {
+            "link": {
+                "name": "third_building<buildingd_grp<geo_grp",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            },
+            "parent": "f9561029-da92-4eae-a7f6-0fae0be25dd1"
         }
     },
     "meshes": {
@@ -3685,6 +3655,276 @@
             "link": {
                 "name": "mesh_44",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
+            }
+        },
+        "01be5123-5c27-4ccc-b290-90dbd73dda18": {
+            "link": {
+                "name": "mesh_0",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "ec6d3590-bcd4-4d27-b67d-92e9692274e8": {
+            "link": {
+                "name": "mesh_1",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "fd711c60-cde6-4674-a020-90b130d9d06f": {
+            "link": {
+                "name": "mesh_2",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "96c56d80-e3da-4554-924b-3f25b93f556f": {
+            "link": {
+                "name": "mesh_3",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "ee85426b-7319-4633-aeb3-1cc8f93ed2ce": {
+            "link": {
+                "name": "mesh_4",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "6ef9629e-20dd-46e3-8fd1-410873e1ee32": {
+            "link": {
+                "name": "mesh_5",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "056458a1-9c96-455e-9508-115a9fc276be": {
+            "link": {
+                "name": "mesh_6",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "c8bb8322-11a6-4d67-a9ab-acb2261f6019": {
+            "link": {
+                "name": "mesh_7",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "54b881aa-bd23-4fa6-9b38-1605af2d4307": {
+            "link": {
+                "name": "mesh_8",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "85eaed55-9c03-4c68-b7be-dd88784ac575": {
+            "link": {
+                "name": "mesh_9",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "084ae433-f643-47ec-a3ed-2ec2c94dec03": {
+            "link": {
+                "name": "mesh_10",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "db2c8459-0a40-4516-b388-5990dfeaef29": {
+            "link": {
+                "name": "mesh_11",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "1b8d104c-b20d-45c9-92ce-b5f84b993c34": {
+            "link": {
+                "name": "mesh_12",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "81af9bcf-3d8e-43c0-a24a-5002dab78d63": {
+            "link": {
+                "name": "mesh_13",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "18bd2562-2462-450f-b2bf-6298e255e4e3": {
+            "link": {
+                "name": "mesh_14",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "b4ffe84a-c249-4cd2-aca3-a977a0152dfc": {
+            "link": {
+                "name": "mesh_15",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "08295250-e42a-4ff6-80fc-7fe37032df48": {
+            "link": {
+                "name": "mesh_16",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "f685b102-df6c-4b20-8ee6-d5287b206ecc": {
+            "link": {
+                "name": "mesh_17",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "5b08201b-193d-48a9-8cbe-07bc9a9ccb18": {
+            "link": {
+                "name": "mesh_18",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "a9c0f1c1-0bf0-492f-ac13-1ea6ed95221f": {
+            "link": {
+                "name": "mesh_19",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "55b0be3b-869e-44d7-acf9-ec2a484f9f91": {
+            "link": {
+                "name": "mesh_20",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "57cfc245-12e1-4b82-94f0-776e2cca1651": {
+            "link": {
+                "name": "mesh_21",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "05a5bb12-3641-414b-bce1-2e06b18f6b3f": {
+            "link": {
+                "name": "mesh_22",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "8de0cfc4-f59a-4ce1-9d72-fdb3ce0e411d": {
+            "link": {
+                "name": "mesh_23",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "4c66e9fe-86e4-4460-a415-d6da5f82fa3d": {
+            "link": {
+                "name": "mesh_24",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "b87f2af9-f778-4012-8e84-86544e5ef770": {
+            "link": {
+                "name": "mesh_25",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "75a6dcd8-e31e-4e5c-b7fa-02179830a1c4": {
+            "link": {
+                "name": "mesh_26",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "4385d4de-a66d-4fad-b2b9-afe384179820": {
+            "link": {
+                "name": "mesh_27",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "0e595487-7cd3-49fb-ad1f-be85a6b59c0b": {
+            "link": {
+                "name": "mesh_28",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "eab9f5ef-15e7-4733-8d9a-f284f5ee8b87": {
+            "link": {
+                "name": "mesh_29",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "34470d41-a43b-469b-b692-dcc3b83ce0e5": {
+            "link": {
+                "name": "mesh_30",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "a95b1938-e661-4319-82e8-1b9b59e4a110": {
+            "link": {
+                "name": "mesh_31",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "620a2849-6b8d-42bf-aeba-4d0282419377": {
+            "link": {
+                "name": "mesh_32",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "33e53b03-b0e0-4649-ba60-687ec05c57a8": {
+            "link": {
+                "name": "mesh_33",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "0fc2a614-b66e-4283-a871-ea22a1a4af2f": {
+            "link": {
+                "name": "mesh_34",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "bf3a674e-a733-4494-93c1-30e88be9eec1": {
+            "link": {
+                "name": "mesh_35",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "c25bf0ef-29b8-43e4-9ac0-f4f331e802f2": {
+            "link": {
+                "name": "mesh_36",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "8be260da-b95f-4418-8593-a4327e7a6a56": {
+            "link": {
+                "name": "mesh_37",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "f7b167f8-7e75-45fd-af75-478f85cac668": {
+            "link": {
+                "name": "mesh_38",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "45b6acc7-e8f4-4a0e-82b3-6867a40347f7": {
+            "link": {
+                "name": "mesh_39",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "097d0da0-ef59-446b-a8af-c6ed76fdcb0e": {
+            "link": {
+                "name": "mesh_40",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "7cef2096-28a5-41f5-9712-2b5e1032e68b": {
+            "link": {
+                "name": "mesh_41",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "9106d2df-103b-4a58-ab76-3b7ab06e8a2f": {
+            "link": {
+                "name": "mesh_42",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "cd76af2f-2cdf-47c4-bbdb-66dc559d6bc4": {
+            "link": {
+                "name": "mesh_43",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "23d6c68b-28be-48e7-a30a-3b7f93fc7bf5": {
+            "link": {
+                "name": "mesh_44",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
             }
         }
     },
@@ -4396,6 +4636,162 @@
                 "shininess": 2
             },
             "name": "boundary_walls_shd"
+        },
+        "39b63c09-65ab-4447-bf7b-dbbef7a7b340": {
+            "link": {
+                "name": "pot_farme_shd",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "b5708e8f-ea47-4c99-b169-0b3ad6f03757": {
+            "link": {
+                "name": "grass_shd",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "6eb4e45c-a7b6-425b-9ca4-1944f461049d": {
+            "link": {
+                "name": "roof_white_shd",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.5019608,
+                    0.5019608,
+                    0.5019608,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "specularColor": [
+                    0.125,
+                    0.125,
+                    0.125,
+                    0.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "shininess": 20
+            }
+        },
+        "dda9761d-6703-4612-af7d-3a903be92f6f": {
+            "link": {
+                "name": "walls_shd",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.5019608,
+                    0.5019608,
+                    0.5019608,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.8509804,
+                    0.8156862,
+                    0.690196,
+                    1.0
+                ],
+                "specularColor": [
+                    0.125,
+                    0.125,
+                    0.125,
+                    0.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "shininess": 20
+            }
+        },
+        "ea336b1a-2e2a-4a87-9768-f2b38f436e91": {
+            "link": {
+                "name": "windows_shd",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.5019608,
+                    0.5019608,
+                    0.5019608,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.3098039,
+                    0.3098039,
+                    0.3098039,
+                    1.0
+                ],
+                "specularColor": [
+                    0.125,
+                    0.125,
+                    0.125,
+                    0.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "shininess": 20
+            }
+        },
+        "c99b4655-1191-41e3-a10f-c1e56e18bfd4": {
+            "link": {
+                "name": "pavement_shd",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.5019608,
+                    0.5019608,
+                    0.5019608,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.2705882,
+                    0.2705882,
+                    0.2705882,
+                    1.0
+                ],
+                "specularColor": [
+                    0.125,
+                    0.125,
+                    0.125,
+                    0.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "shininess": 20
+            }
+        },
+        "3deea99b-0940-4071-b104-cd53e5605f60": {
+            "link": {
+                "name": "floor_shd",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "a1c73165-1025-4abd-a68a-d75c3f887d9a": {
+            "link": {
+                "name": "glass_frame_shd",
+                "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
         }
     },
     "animations": {},
@@ -4564,6 +4960,11 @@
         },
         "21b03cbc-3203-4676-b6d5-b6a679139b4a": {
             "fileName": "assets/university-campus/source/basic_campus.fbx",
+            "importerName": "",
+            "importPhysicalAsPhongMaterials": true
+        },
+        "053eca33-b9e2-4739-80b9-38d9d422215a": {
+            "fileName": "assets/university-campus/source/Campus.fbx",
             "importerName": "",
             "importPhysicalAsPhongMaterials": true
         }
