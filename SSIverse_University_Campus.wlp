@@ -3182,7 +3182,7 @@
                 -0.3
             ],
             "rotation": [
-                -2.6692548615869782e-8,
+                -2.6692548615869786e-8,
                 0.7071068,
                 2.669255039222662e-8,
                 0.7071067
@@ -3206,28 +3206,584 @@
                 "name": "mid_building<buildingd_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\Campus.fbx"
             },
-            "parent": "f9561029-da92-4eae-a7f6-0fae0be25dd1"
+            "parent": "f9561029-da92-4eae-a7f6-0fae0be25dd1",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "6eb4e45c-a7b6-425b-9ca4-1944f461049d",
+                        "mesh": "05a5bb12-3641-414b-bce1-2e06b18f6b3f"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "dda9761d-6703-4612-af7d-3a903be92f6f",
+                        "mesh": "8de0cfc4-f59a-4ce1-9d72-fdb3ce0e411d"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "ea336b1a-2e2a-4a87-9768-f2b38f436e91",
+                        "mesh": "4c66e9fe-86e4-4460-a415-d6da5f82fa3d"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "c99b4655-1191-41e3-a10f-c1e56e18bfd4",
+                        "mesh": "b87f2af9-f778-4012-8e84-86544e5ef770"
+                    },
+                    "active": true
+                }
+            ]
         },
         "47ea9d94-e9bd-4119-9007-5da45e837b3e": {
             "link": {
                 "name": "parking_shade<buildingd_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\Campus.fbx"
             },
-            "parent": "f9561029-da92-4eae-a7f6-0fae0be25dd1"
+            "parent": "6c5d5d04-907a-423e-a417-75c471fa92bc",
+            "translation": [
+                -2.384185791015625e-7,
+                0.0,
+                -1.4901161193847656e-8
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
         },
         "c37656ac-f1db-416f-b6e8-eefcfc909977": {
             "link": {
                 "name": "small_building<buildingd_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\Campus.fbx"
             },
-            "parent": "f9561029-da92-4eae-a7f6-0fae0be25dd1"
+            "parent": "f9561029-da92-4eae-a7f6-0fae0be25dd1",
+            "translation": [
+                0.4741907,
+                0.000002,
+                0.1968157
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
         },
         "6c5d5d04-907a-423e-a417-75c471fa92bc": {
             "link": {
                 "name": "third_building<buildingd_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\Campus.fbx"
             },
-            "parent": "f9561029-da92-4eae-a7f6-0fae0be25dd1"
+            "parent": "f9561029-da92-4eae-a7f6-0fae0be25dd1",
+            "translation": [
+                1.7252458,
+                0.0000033,
+                0.1968159
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "839d9b99-f87b-4fd4-b8dd-492351f82216": {
+            "link": {
+                "name": "Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "translation": [
+                14.2464733,
+                -0.7537207,
+                15.2924327
+            ],
+            "scaling": [
+                1.624988,
+                1.6249886,
+                0.8333333
+            ],
+            "rotation": [
+                -8.429373679064156e-7,
+                7.277334930222423e-7,
+                -0.7071065,
+                0.707107
+            ],
+            "parent": "330adfd5-80e6-4193-88ec-128b2cda93a8",
+            "name": "door1_mid_building"
+        },
+        "b525f48a-2f11-4d0b-b75f-f7407c782dc8": {
+            "link": {
+                "name": "Cube<Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "parent": "839d9b99-f87b-4fd4-b8dd-492351f82216",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "9c8cc01b-fa51-4eec-8157-b808e8eeb583",
+                        "mesh": "bca517c3-eea9-4a8c-9edd-fb71f9245c8d",
+                        "skin": "f8129040-f5c9-44e6-824e-e04b6ff4a832"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "b77e271e-2732-4f24-8211-eafc78a9e035",
+                        "mesh": "be828c47-a572-48ac-9a1d-31cb46409c2c",
+                        "skin": "f8129040-f5c9-44e6-824e-e04b6ff4a832"
+                    }
+                }
+            ]
+        },
+        "fec7d758-92a9-4397-8c75-3894892c923b": {
+            "link": {
+                "name": "root<Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "parent": "839d9b99-f87b-4fd4-b8dd-492351f82216",
+            "skin": "f8129040-f5c9-44e6-824e-e04b6ff4a832",
+            "components": [
+                {
+                    "type": "animation",
+                    "animation": {
+                        "animation": "8f7dbf99-5784-456c-b0c6-8efd8397f756",
+                        "autoplay": false,
+                        "preview": false,
+                        "rootMotionMode": "none"
+                    },
+                    "active": true
+                }
+            ]
+        },
+        "2178dda8-9def-4156-8d1f-f23a1d06d1d8": {
+            "link": {
+                "name": "porta dx<root<Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "parent": "fec7d758-92a9-4397-8c75-3894892c923b",
+            "skin": "f8129040-f5c9-44e6-824e-e04b6ff4a832",
+            "rotation": [
+                -0.4999999,
+                0.5,
+                0.5000001,
+                0.5
+            ],
+            "scaling": [
+                1.0,
+                0.9999999,
+                1.0
+            ],
+            "translation": [
+                -0.8969993,
+                -0.0001524,
+                1.0793905
+            ]
+        },
+        "883b42f7-8dc7-4b45-b3de-4c2beb909cf0": {
+            "link": {
+                "name": "porta sx<root<Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "parent": "fec7d758-92a9-4397-8c75-3894892c923b",
+            "skin": "f8129040-f5c9-44e6-824e-e04b6ff4a832",
+            "rotation": [
+                -0.4999999,
+                0.5,
+                0.5000001,
+                0.5
+            ],
+            "translation": [
+                -0.8967372,
+                -0.0000914,
+                -1.0108767
+            ],
+            "scaling": [
+                1.0,
+                0.9999999,
+                1.0
+            ]
+        },
+        "840eff1d-78d8-474c-8d09-f1b05e059698": {
+            "link": {
+                "name": "Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "translation": [
+                -8.9744262,
+                -0.7539801,
+                14.0230369
+            ],
+            "scaling": [
+                1.4999998,
+                1.5833334,
+                0.8119656
+            ],
+            "rotation": [
+                2.6692578813936052e-8,
+                1.9527996641954817e-7,
+                -0.7071068,
+                0.7071067
+            ],
+            "parent": "330adfd5-80e6-4193-88ec-128b2cda93a8",
+            "name": "door2_mid_building"
+        },
+        "53474ce4-03fd-40c4-acfe-c9f6a4a880f6": {
+            "link": {
+                "name": "root<Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "parent": "840eff1d-78d8-474c-8d09-f1b05e059698",
+            "skin": "2bbca8cc-fb22-4e9c-8202-7013091d148c",
+            "translation": [
+                -1.6278880821118946e-7,
+                1.3652448,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                -0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "name": "root"
+        },
+        "729687ce-4ea1-4dae-9c78-e8ab5495fd92": {
+            "link": {
+                "name": "porta dx<root<Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "parent": "53474ce4-03fd-40c4-acfe-c9f6a4a880f6",
+            "skin": "2bbca8cc-fb22-4e9c-8202-7013091d148c",
+            "rotation": [
+                -0.4999998,
+                0.5,
+                0.5000001,
+                0.5
+            ],
+            "scaling": [
+                1.0,
+                0.9999999,
+                1.0
+            ],
+            "translation": [
+                -0.8969993,
+                -0.0001543,
+                1.0359201
+            ],
+            "name": "porta dx"
+        },
+        "3436cead-1249-4494-968e-8afc8731345a": {
+            "link": {
+                "name": "porta sx<root<Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "parent": "53474ce4-03fd-40c4-acfe-c9f6a4a880f6",
+            "skin": "2bbca8cc-fb22-4e9c-8202-7013091d148c",
+            "rotation": [
+                -0.4999998,
+                0.5,
+                0.5000001,
+                0.5
+            ],
+            "translation": [
+                -0.8967372,
+                -0.0000957,
+                -0.9264613
+            ],
+            "scaling": [
+                1.0,
+                0.9999999,
+                1.0
+            ],
+            "name": "porta sx"
+        },
+        "c5fa9728-f336-4cb3-a460-7f3dabeb63dc": {
+            "link": {
+                "name": "Cube<Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "parent": "840eff1d-78d8-474c-8d09-f1b05e059698",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "9c8cc01b-fa51-4eec-8157-b808e8eeb583",
+                        "mesh": "bca517c3-eea9-4a8c-9edd-fb71f9245c8d",
+                        "skin": "2bbca8cc-fb22-4e9c-8202-7013091d148c"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "b77e271e-2732-4f24-8211-eafc78a9e035",
+                        "mesh": "be828c47-a572-48ac-9a1d-31cb46409c2c",
+                        "skin": "2bbca8cc-fb22-4e9c-8202-7013091d148c"
+                    }
+                }
+            ],
+            "name": "Cube"
+        },
+        "3500ee67-6e45-4139-99db-9e441b0d4a40": {
+            "link": {
+                "name": "Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "translation": [
+                43.413475,
+                -0.083656,
+                15.796257
+            ],
+            "scaling": [
+                1.4166666,
+                1.4953703,
+                0.7668562
+            ],
+            "rotation": [
+                0.0000018,
+                -2.683359809907415e-7,
+                -0.707107,
+                0.7071065
+            ],
+            "parent": "c37656ac-f1db-416f-b6e8-eefcfc909977",
+            "name": "door1_small_building"
+        },
+        "1433e9c3-662c-44b3-9573-92dbce1c819c": {
+            "link": {
+                "name": "root<Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "parent": "3500ee67-6e45-4139-99db-9e441b0d4a40",
+            "skin": "102f0ed4-8f6d-467a-a8a3-6920729dde10",
+            "translation": [
+                -1.6278880821118946e-7,
+                1.3652448,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                -0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "name": "root"
+        },
+        "4b699249-71ea-4272-aa14-10b8d79bbac3": {
+            "link": {
+                "name": "porta dx<root<Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "parent": "1433e9c3-662c-44b3-9573-92dbce1c819c",
+            "skin": "102f0ed4-8f6d-467a-a8a3-6920729dde10",
+            "rotation": [
+                -0.4999998,
+                0.5,
+                0.5000001,
+                0.5
+            ],
+            "scaling": [
+                1.0,
+                0.9999999,
+                1.0
+            ],
+            "translation": [
+                -0.8969993,
+                -0.0001543,
+                1.0359201
+            ],
+            "name": "porta dx"
+        },
+        "aacabcfd-fcb0-45b6-a707-6c3e4e50b5cf": {
+            "link": {
+                "name": "porta sx<root<Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "parent": "1433e9c3-662c-44b3-9573-92dbce1c819c",
+            "skin": "102f0ed4-8f6d-467a-a8a3-6920729dde10",
+            "rotation": [
+                -0.4999998,
+                0.5,
+                0.5000001,
+                0.5
+            ],
+            "translation": [
+                -0.8967372,
+                -0.0000957,
+                -0.9264613
+            ],
+            "scaling": [
+                1.0,
+                0.9999999,
+                1.0
+            ],
+            "name": "porta sx"
+        },
+        "e47f65c0-5255-4537-bb86-d6d9d4af24aa": {
+            "link": {
+                "name": "Cube<Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "parent": "3500ee67-6e45-4139-99db-9e441b0d4a40",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "9c8cc01b-fa51-4eec-8157-b808e8eeb583",
+                        "mesh": "bca517c3-eea9-4a8c-9edd-fb71f9245c8d",
+                        "skin": "102f0ed4-8f6d-467a-a8a3-6920729dde10"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "b77e271e-2732-4f24-8211-eafc78a9e035",
+                        "mesh": "be828c47-a572-48ac-9a1d-31cb46409c2c",
+                        "skin": "102f0ed4-8f6d-467a-a8a3-6920729dde10"
+                    }
+                }
+            ],
+            "name": "Cube"
+        },
+        "03134fa8-4d86-4c69-96da-b506c8596d28": {
+            "link": {
+                "name": "Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "translation": [
+                -60.2919197,
+                -0.0833679,
+                14.5531787
+            ],
+            "scaling": [
+                1.4874998,
+                1.4875018,
+                0.7628201
+            ],
+            "rotation": [
+                -0.5001927,
+                0.5001937,
+                -0.4998068,
+                0.4998066
+            ],
+            "parent": "6c5d5d04-907a-423e-a417-75c471fa92bc",
+            "name": "door1_third_building"
+        },
+        "1af4c4c1-a0a2-4741-976d-5af2961c4634": {
+            "link": {
+                "name": "root<Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "parent": "03134fa8-4d86-4c69-96da-b506c8596d28",
+            "skin": "dc019dae-888b-4baa-a414-c54dfba88624",
+            "name": "root"
+        },
+        "6a88ff7f-6a27-4dd7-8fe1-bba12c30fe4c": {
+            "link": {
+                "name": "porta dx<root<Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "parent": "1af4c4c1-a0a2-4741-976d-5af2961c4634",
+            "skin": "dc019dae-888b-4baa-a414-c54dfba88624",
+            "rotation": [
+                -0.4999999,
+                0.5,
+                0.5000001,
+                0.5
+            ],
+            "scaling": [
+                1.0,
+                0.9999999,
+                1.0
+            ],
+            "translation": [
+                -0.8969993,
+                -0.0001524,
+                1.0793905
+            ],
+            "name": "porta dx"
+        },
+        "f57d499e-1cbc-4d36-b45b-134fac4b4754": {
+            "link": {
+                "name": "porta sx<root<Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "parent": "1af4c4c1-a0a2-4741-976d-5af2961c4634",
+            "skin": "dc019dae-888b-4baa-a414-c54dfba88624",
+            "rotation": [
+                -0.4999999,
+                0.5,
+                0.5000001,
+                0.5
+            ],
+            "translation": [
+                -0.8967372,
+                -0.0000914,
+                -1.0108767
+            ],
+            "scaling": [
+                1.0,
+                0.9999999,
+                1.0
+            ],
+            "name": "porta sx"
+        },
+        "99ba8278-b700-4308-b1b3-4e03c5683e49": {
+            "link": {
+                "name": "Cube<Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "parent": "03134fa8-4d86-4c69-96da-b506c8596d28",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "9c8cc01b-fa51-4eec-8157-b808e8eeb583",
+                        "mesh": "bca517c3-eea9-4a8c-9edd-fb71f9245c8d",
+                        "skin": "dc019dae-888b-4baa-a414-c54dfba88624"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "b77e271e-2732-4f24-8211-eafc78a9e035",
+                        "mesh": "be828c47-a572-48ac-9a1d-31cb46409c2c",
+                        "skin": "dc019dae-888b-4baa-a414-c54dfba88624"
+                    }
+                }
+            ],
+            "name": "Cube"
         }
     },
     "meshes": {
@@ -3925,6 +4481,18 @@
             "link": {
                 "name": "mesh_44",
                 "file": "assets\\university-campus\\source\\Campus.fbx"
+            }
+        },
+        "bca517c3-eea9-4a8c-9edd-fb71f9245c8d": {
+            "link": {
+                "name": "Cube.001",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            }
+        },
+        "be828c47-a572-48ac-9a1d-31cb46409c2c": {
+            "link": {
+                "name": "Cube.001.0",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
             }
         }
     },
@@ -4792,10 +5360,139 @@
                 "name": "glass_frame_shd",
                 "file": "assets\\university-campus\\source\\Campus.fbx"
             }
+        },
+        "9c8cc01b-fa51-4eec-8157-b808e8eeb583": {
+            "link": {
+                "name": "muro",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "Phong": {
+                "diffuseColor": [
+                    0.8509804,
+                    0.8156862,
+                    0.690196,
+                    1.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "shininess": 61,
+                "specularColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "ambientColor": [
+                    0.5019608,
+                    0.5019608,
+                    0.5019608,
+                    1.0
+                ]
+            }
+        },
+        "b77e271e-2732-4f24-8211-eafc78a9e035": {
+            "link": {
+                "name": "vetro",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "Phong": {
+                "diffuseColor": [
+                    0.5294117,
+                    0.8078431,
+                    0.9215686,
+                    1.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "shininess": 195,
+                "specularColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ],
+                "ambientColor": [
+                    0.2642675,
+                    0.3593101,
+                    0.3764705,
+                    1.0
+                ]
+            }
         }
     },
-    "animations": {},
-    "skins": {},
+    "animations": {
+        "8f7dbf99-5784-456c-b0c6-8efd8397f756": {
+            "link": {
+                "name": "ArmatureAction",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            }
+        }
+    },
+    "skins": {
+        "f8129040-f5c9-44e6-824e-e04b6ff4a832": {
+            "link": {
+                "name": "Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "joints": [
+                "fec7d758-92a9-4397-8c75-3894892c923b",
+                "2178dda8-9def-4156-8d1f-f23a1d06d1d8",
+                "883b42f7-8dc7-4b45-b3de-4c2beb909cf0"
+            ]
+        },
+        "cfa42858-37b2-417b-ab74-20a203deb27a": {
+            "link": {
+                "name": "Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "joints": [
+                "53474ce4-03fd-40c4-acfe-c9f6a4a880f6",
+                "729687ce-4ea1-4dae-9c78-e8ab5495fd92",
+                "3436cead-1249-4494-968e-8afc8731345a"
+            ]
+        },
+        "2bbca8cc-fb22-4e9c-8202-7013091d148c": {
+            "link": {
+                "name": "Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "joints": [
+                "53474ce4-03fd-40c4-acfe-c9f6a4a880f6",
+                "729687ce-4ea1-4dae-9c78-e8ab5495fd92",
+                "3436cead-1249-4494-968e-8afc8731345a"
+            ]
+        },
+        "102f0ed4-8f6d-467a-a8a3-6920729dde10": {
+            "link": {
+                "name": "Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "joints": [
+                "1433e9c3-662c-44b3-9573-92dbce1c819c",
+                "4b699249-71ea-4272-aa14-10b8d79bbac3",
+                "aacabcfd-fcb0-45b6-a707-6c3e4e50b5cf"
+            ]
+        },
+        "dc019dae-888b-4baa-a414-c54dfba88624": {
+            "link": {
+                "name": "Armature",
+                "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
+            },
+            "joints": [
+                "1af4c4c1-a0a2-4741-976d-5af2961c4634",
+                "6a88ff7f-6a27-4dd7-8fe1-bba12c30fe4c",
+                "f57d499e-1cbc-4d36-b45b-134fac4b4754"
+            ]
+        }
+    },
     "pipelines": {
         "db2e77f7-8680-4a52-b7a2-72840aca6440": {
             "link": {
@@ -4825,7 +5522,8 @@
             "link": {
                 "name": "Flat Opaque",
                 "file": "default"
-            }
+            },
+            "doubleSided": true
         },
         "09918bfd-8188-4615-be85-7a100306f4f2": {
             "link": {
@@ -4837,7 +5535,8 @@
             "link": {
                 "name": "Phong Opaque",
                 "file": "default"
-            }
+            },
+            "doubleSided": true
         },
         "2762071d-3ed2-487d-9b98-0bf0a6e8f24c": {
             "link": {
@@ -4965,6 +5664,11 @@
         },
         "053eca33-b9e2-4739-80b9-38d9d422215a": {
             "fileName": "assets/university-campus/source/Campus.fbx",
+            "importerName": "",
+            "importPhysicalAsPhongMaterials": true
+        },
+        "b94078ee-c2a3-4709-976e-6be1e02a732f": {
+            "fileName": "assets/simple-automatic-door-animation/source/porta automatica.glb",
             "importerName": "",
             "importPhysicalAsPhongMaterials": true
         }
