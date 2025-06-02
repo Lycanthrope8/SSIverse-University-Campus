@@ -3315,23 +3315,23 @@
                 "file": "assets\\simple-automatic-door-animation\\source\\porta automatica.glb"
             },
             "translation": [
-                14.2464733,
-                -0.7537207,
-                15.2924327
+                13.9121284,
+                -0.7537674,
+                15.2924251
             ],
-            "scaling": [
-                1.624988,
-                1.6249886,
-                0.8333333
-            ],
+            "name": "door1_mid_building",
             "rotation": [
-                -8.429373679064156e-7,
-                7.277334930222423e-7,
-                -0.7071065,
-                0.707107
+                -8.429374247498345e-7,
+                7.277330382748914e-7,
+                -0.7071063,
+                0.7071071
             ],
             "parent": "330adfd5-80e6-4193-88ec-128b2cda93a8",
-            "name": "door1_mid_building"
+            "scaling": [
+                1.6499999,
+                1.6499999,
+                1.6500004
+            ]
         },
         "b525f48a-2f11-4d0b-b75f-f7407c782dc8": {
             "link": {
@@ -3371,8 +3371,11 @@
                     "animation": {
                         "animation": "8f7dbf99-5784-456c-b0c6-8efd8397f756",
                         "autoplay": false,
-                        "preview": false,
-                        "rootMotionMode": "none"
+                        "preview": true,
+                        "rootMotionMode": "none",
+                        "playCount": 0,
+                        "retarget": true,
+                        "skin": "2bbca8cc-fb22-4e9c-8202-7013091d148c"
                     },
                     "active": true
                 }
@@ -3448,7 +3451,7 @@
                 0.7071067
             ],
             "parent": "330adfd5-80e6-4193-88ec-128b2cda93a8",
-            "name": "door2_mid_building"
+            "name": "Armature"
         },
         "53474ce4-03fd-40c4-acfe-c9f6a4a880f6": {
             "link": {
@@ -3687,9 +3690,9 @@
                 14.5531787
             ],
             "scaling": [
-                1.4874998,
-                1.4875018,
-                0.7628201
+                1.491,
+                1.4910019,
+                0.7646151
             ],
             "rotation": [
                 -0.5001927,
