@@ -9,6 +9,7 @@ export class SlidingDoorAnimator extends Component {
     rightDoor: Property.object(),
     slideDistance: Property.float(1.0),
     autoCloseDelay: Property.float(5.0),
+    slideAxis: Property.enum(["x", "z"], "x"), // Add this
   };
 
   start() {
@@ -34,13 +35,23 @@ export class SlidingDoorAnimator extends Component {
     this.openPosLeft = vec3.clone(this.closedPosLeft);
     this.openPosRight = vec3.clone(this.closedPosRight);
 
-    this.openPosLeft[0] += this.slideDistance;
-    this.openPosRight[0] -= this.slideDistance;
+    // Determine axis index (0 for x, 2 for z)
+    const axisIndex = this.slideAxis === 0 ? 0 : 2;
+
+    if (this.slideAxis === 0) {
+      // X-axis logic
+      this.openPosLeft[axisIndex] += this.slideDistance;
+      this.openPosRight[axisIndex] -= this.slideDistance;
+    } else {
+      // Z-axis logic
+      this.openPosLeft[axisIndex] -= this.slideDistance;
+      this.openPosRight[axisIndex] += this.slideDistance;
+    }
+
 
     cursorTarget.onClick.add(() => {
       if (this.animating) return;
 
-      // Cancel auto-close if pending
       this.waitToClose = false;
       this.autoCloseTimer = 0;
 
