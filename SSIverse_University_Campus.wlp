@@ -3584,9 +3584,49 @@
                         "mesh": "be828c47-a572-48ac-9a1d-31cb46409c2c",
                         "skin": "2bbca8cc-fb22-4e9c-8202-7013091d148c"
                     }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                0.6999999,
+                                0.8,
+                                0.6
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "sliding-door-animator",
+                    "sliding-door-animator": {
+                        "leftDoor": "729687ce-4ea1-4dae-9c78-e8ab5495fd92",
+                        "rightDoor": "3436cead-1249-4494-968e-8afc8731345a",
+                        "slideDistance": 2.5
+                    }
                 }
             ],
-            "name": "Cube"
+            "name": "Cube",
+            "translation": [
+                -1.7891145,
+                1.3705884,
+                4.6611328
+            ],
+            "rotation": [
+                -0.0000065,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
         },
         "3500ee67-6e45-4139-99db-9e441b0d4a40": {
             "link": {
@@ -4011,6 +4051,206 @@
                 "file": "assets\\keycard__scanner.glb"
             },
             "parent": "0c5912cb-0400-48b0-8897-2a0a172ab02a",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "4ee64323-8a51-45c2-a2d9-79bc17eed6b6",
+                        "mesh": "e38e0770-5a53-46ec-b695-0893ec79c878"
+                    },
+                    "active": false
+                }
+            ]
+        },
+        "22be0eee-0777-4b96-b648-d6955bd72106": {
+            "link": {
+                "name": "RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "840eff1d-78d8-474c-8d09-f1b05e059698",
+            "name": "Door Lock Outdoor",
+            "translation": [
+                -1.3793207,
+                1.1269677,
+                4.1278896
+            ],
+            "rotation": [
+                -0.4999991,
+                0.5000007,
+                -0.5,
+                -0.5
+            ],
+            "scaling": [
+                0.0049999,
+                0.0049999,
+                0.0052631
+            ]
+        },
+        "39f3349d-de4e-4ae1-beb9-80ea5ea59155": {
+            "link": {
+                "name": "Booleano<RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "22be0eee-0777-4b96-b648-d6955bd72106"
+        },
+        "f4e1906a-d94a-4fa2-a53e-2d3d0276d80d": {
+            "link": {
+                "name": "Booleano_Mat_0<Booleano<RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "39f3349d-de4e-4ae1-beb9-80ea5ea59155"
+        },
+        "3a9df6ef-631c-4b98-90c8-4db932091954": {
+            "link": {
+                "name": "Booleano_1<RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "22be0eee-0777-4b96-b648-d6955bd72106"
+        },
+        "97eec227-3aec-4583-9ded-f97f5a0e8f97": {
+            "link": {
+                "name": "Booleano_1_Mat_0<Booleano_1<RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "3a9df6ef-631c-4b98-90c8-4db932091954"
+        },
+        "8aa2b257-d9bc-42bc-9630-423a2f12dfde": {
+            "link": {
+                "name": "Conector<RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "22be0eee-0777-4b96-b648-d6955bd72106"
+        },
+        "1ea7b5ef-0af2-475f-b9c4-ac0c2741824e": {
+            "link": {
+                "name": "Conector_Mat_0<Conector<RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "8aa2b257-d9bc-42bc-9630-423a2f12dfde",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "29d3ede6-8f95-4c37-b5e3-1f70114836f8",
+                        "mesh": "39286951-3122-4ee7-b8d4-66b5cbbac857"
+                    },
+                    "active": false
+                }
+            ]
+        },
+        "fd078500-326f-4fd0-a5e9-166dcbdd6afa": {
+            "link": {
+                "name": "NeonPart<RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "22be0eee-0777-4b96-b648-d6955bd72106"
+        },
+        "01fd0573-4256-47c1-ada4-182129b72450": {
+            "link": {
+                "name": "NeonPart_Mat_0<NeonPart<RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "fd078500-326f-4fd0-a5e9-166dcbdd6afa",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "4ee64323-8a51-45c2-a2d9-79bc17eed6b6",
+                        "mesh": "e38e0770-5a53-46ec-b695-0893ec79c878"
+                    },
+                    "active": false
+                }
+            ]
+        },
+        "e1a4d80e-8f1e-4035-a381-5b985c6b6e3e": {
+            "link": {
+                "name": "RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "840eff1d-78d8-474c-8d09-f1b05e059698",
+            "name": "Door Lock Indoor",
+            "translation": [
+                -1.3822462,
+                1.6068438,
+                5.2127542
+            ],
+            "rotation": [
+                -0.5000001,
+                0.5000001,
+                0.4999998,
+                0.4999998
+            ],
+            "scaling": [
+                0.0049999,
+                0.0049999,
+                0.0052631
+            ]
+        },
+        "9a7b2000-8bfe-4879-b72f-557244079073": {
+            "link": {
+                "name": "Booleano<RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "e1a4d80e-8f1e-4035-a381-5b985c6b6e3e"
+        },
+        "27b8fec2-09e0-49c9-b9e6-c3b19df06e1c": {
+            "link": {
+                "name": "Booleano_Mat_0<Booleano<RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "9a7b2000-8bfe-4879-b72f-557244079073"
+        },
+        "a29170ce-0468-4da6-8c5f-84234e71e891": {
+            "link": {
+                "name": "Booleano_1<RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "e1a4d80e-8f1e-4035-a381-5b985c6b6e3e"
+        },
+        "9128a695-cccd-4cf5-93f7-da9b86b2056d": {
+            "link": {
+                "name": "Booleano_1_Mat_0<Booleano_1<RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "a29170ce-0468-4da6-8c5f-84234e71e891"
+        },
+        "e1f4236b-ea89-470a-b8c7-11930f984cea": {
+            "link": {
+                "name": "Conector<RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "e1a4d80e-8f1e-4035-a381-5b985c6b6e3e"
+        },
+        "d9675775-00d7-4f38-9f32-7b9505298a1b": {
+            "link": {
+                "name": "Conector_Mat_0<Conector<RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "e1f4236b-ea89-470a-b8c7-11930f984cea",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "29d3ede6-8f95-4c37-b5e3-1f70114836f8",
+                        "mesh": "39286951-3122-4ee7-b8d4-66b5cbbac857"
+                    },
+                    "active": false
+                }
+            ]
+        },
+        "902ef77b-0289-4ebb-a347-c272f1b757b5": {
+            "link": {
+                "name": "NeonPart<RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "e1a4d80e-8f1e-4035-a381-5b985c6b6e3e"
+        },
+        "f7fc97b3-4076-4b3c-b24e-aa5ea021a3e7": {
+            "link": {
+                "name": "NeonPart_Mat_0<NeonPart<RootNode<f4d9188f27a34de39398487c3b1afd47.fbx<Sketchfab_model",
+                "file": "assets\\keycard__scanner.glb"
+            },
+            "parent": "902ef77b-0289-4ebb-a347-c272f1b757b5",
             "components": [
                 {
                     "type": "mesh",

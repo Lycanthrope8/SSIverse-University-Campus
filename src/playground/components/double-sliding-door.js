@@ -8,11 +8,12 @@ export class SlidingDoorAnimator extends Component {
     leftDoor: Property.object(),
     rightDoor: Property.object(),
     slideDistance: Property.float(1.0),
-    autoCloseDelay: Property.float(5.0), // delay in seconds before auto-close
+    autoCloseDelay: Property.float(5.0),
   };
 
   start() {
     console.log("SlidingDoorAnimator started");
+
     const cursorTarget = this.object.getComponent("cursor-target");
     if (!cursorTarget) {
       console.warn("No CursorTarget component found!");
@@ -22,11 +23,11 @@ export class SlidingDoorAnimator extends Component {
     this.isOpen = false;
     this.animating = false;
     this.animationTime = 0;
-    this.duration = 0.5; // seconds
+    this.duration = 0.5;
     this.autoCloseTimer = 0;
     this.waitToClose = false;
 
-    // Initial positions
+    // Save original positions
     this.closedPosLeft = vec3.clone(this.leftDoor.getPositionWorld());
     this.closedPosRight = vec3.clone(this.rightDoor.getPositionWorld());
 
@@ -37,10 +38,14 @@ export class SlidingDoorAnimator extends Component {
     this.openPosRight[0] -= this.slideDistance;
 
     cursorTarget.onClick.add(() => {
-      if (!this.animating && !this.waitToClose) {
-        this.animating = true;
-        this.animationTime = 0;
-      }
+      if (this.animating) return;
+
+      // Cancel auto-close if pending
+      this.waitToClose = false;
+      this.autoCloseTimer = 0;
+
+      this.animating = true;
+      this.animationTime = 0;
     });
   }
 
@@ -65,7 +70,6 @@ export class SlidingDoorAnimator extends Component {
         this.animating = false;
 
         if (!this.isOpen) {
-          // Door just opened — start countdown to auto-close
           this.waitToClose = true;
           this.autoCloseTimer = 0;
         }
