@@ -48,14 +48,15 @@
                         "_myPhysicsBlockLayerFlags": "0, 1, 0, 0, 0, 0, 0, 0",
                         "_myTeleportValidMaterial": "90348bdc-8768-4244-9398-b89361708289",
                         "_myTeleportInvalidMaterial": "6c7363ad-f7ee-465b-9031-541e40292fff",
-                        "_myMaxSpeed": 10.0
+                        "_myMaxSpeed": 10.0,
+                        "_myDefaultHeight": 2.5
                     }
                 }
             ],
-            "translation": [
-                -22.6118526,
-                6.4024481,
-                -6.6419706
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
             ],
             "rotation": [
                 0.0,
@@ -63,10 +64,10 @@
                 0.0,
                 1.0
             ],
-            "scaling": [
-                1.0,
-                1.0,
-                1.0
+            "translation": [
+                -22.6118526,
+                6.4024481,
+                -6.6419706
             ]
         },
         "5503f8af-6bfc-4d97-b2cc-3e4d8fd44d09": {
@@ -108,7 +109,12 @@
         },
         "be12c4ed-e083-4ba0-b305-1e17ca69fe19": {
             "name": "Eyes",
-            "parent": "8be78c73-85be-4c1e-8f67-fd89305ab2ae"
+            "parent": "8be78c73-85be-4c1e-8f67-fd89305ab2ae",
+            "translation": [
+                0.0,
+                2.5,
+                0.0
+            ]
         },
         "f72caa43-ac99-4b19-ab19-706fc24c1021": {
             "name": "Hands Left",
@@ -153,6 +159,11 @@
                         "type": "eye left"
                     }
                 }
+            ],
+            "translation": [
+                0.0,
+                2.7999999,
+                0.0
             ]
         },
         "665488c7-f768-473e-8fe7-8b4ccd5bc647": {
@@ -171,6 +182,11 @@
                         "type": "eye right"
                     }
                 }
+            ],
+            "translation": [
+                0.0,
+                2.7999999,
+                0.0
             ]
         },
         "26727e6b-7a15-4314-8a36-b7bf99ece0fa": {
@@ -248,7 +264,12 @@
         },
         "6d6968ab-fff0-454a-9d65-cd26adc4b958": {
             "name": "Heads",
-            "parent": "5503f8af-6bfc-4d97-b2cc-3e4d8fd44d09"
+            "parent": "5503f8af-6bfc-4d97-b2cc-3e4d8fd44d09",
+            "translation": [
+                0.0,
+                2.5,
+                0.0
+            ]
         },
         "ff9bf13e-8f93-4f3e-8865-52f81cd5130b": {
             "name": "Head",
@@ -264,7 +285,12 @@
         },
         "32423927-72cb-41bf-a0ab-7bba6e6eb1da": {
             "name": "Hands",
-            "parent": "5503f8af-6bfc-4d97-b2cc-3e4d8fd44d09"
+            "parent": "5503f8af-6bfc-4d97-b2cc-3e4d8fd44d09",
+            "translation": [
+                0.0,
+                2.5,
+                0.0
+            ]
         },
         "f0cbb5f3-92cc-4f20-941c-2e7a438f166c": {
             "name": "Hand Left",
@@ -334,7 +360,8 @@
                     "type": "pp-easy-tune-tool",
                     "pp-easy-tune-tool": {
                         "_myHandedness": "Left"
-                    }
+                    },
+                    "active": true
                 }
             ],
             "translation": [
@@ -819,7 +846,23 @@
         },
         "62d70d96-7b4d-451c-a863-0b9947b0fdec": {
             "name": "Walls",
-            "parent": "526adb29-57d2-4b09-ac41-5efed44996a2"
+            "parent": "9349ca93-6047-45d7-91b3-2db7b741e11f",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
         },
         "9cd79e6d-22f1-4bab-a6bc-4ba70e1a54a6": {
             "name": "Wall",
@@ -1039,7 +1082,8 @@
                         "block": 5,
                         "gravity": false,
                         "static": true
-                    }
+                    },
+                    "active": true
                 }
             ],
             "rotation": [
@@ -2342,14 +2386,16 @@
                         "_mySetActiveWhen": "Enter XR",
                         "_myActive": false,
                         "_mySetActiveOn": "Descendants"
-                    }
+                    },
+                    "active": true
                 },
                 {
                     "type": "pp-set-active",
                     "pp-set-active": {
                         "_mySetActiveWhen": "Exit XR",
                         "_mySetActiveOn": "Descendants"
-                    }
+                    },
+                    "active": true
                 }
             ],
             "rotation": [
@@ -2511,7 +2557,8 @@
                                 0.0099999
                             ]
                         }
-                    }
+                    },
+                    "active": true
                 },
                 {
                     "type": "pp-adjust-hierarchy-physx-scale"
@@ -2520,7 +2567,8 @@
                     "type": "pp-wl-cursor-target-wrapper",
                     "pp-wl-cursor-target-wrapper": {
                         "_myIsSurface": true
-                    }
+                    },
+                    "active": true
                 }
             ]
         },
@@ -2912,7 +2960,8 @@
                     "type": "teleport-on-tracked-hands",
                     "teleport-on-tracked-hands": {
                         "_myTeleportTargetObject": "fc705769-0aef-4b0b-9fe0-88197eceff56"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
@@ -2926,7 +2975,8 @@
             "parent": "ecaac23c-a887-4bfd-babb-9606a9278f9f",
             "components": [
                 {
-                    "type": "set-active-on-tracked-hands"
+                    "type": "set-active-on-tracked-hands",
+                    "active": true
                 }
             ]
         },
@@ -3712,7 +3762,16 @@
                 1.0,
                 1.0
             ],
-            "name": "root"
+            "name": "root",
+            "components": [
+                {
+                    "type": "animation",
+                    "animation": {
+                        "animation": "8f7dbf99-5784-456c-b0c6-8efd8397f756",
+                        "preview": false
+                    }
+                }
+            ]
         },
         "4b699249-71ea-4272-aa14-10b8d79bbac3": {
             "link": {
@@ -3727,17 +3786,12 @@
                 0.5000001,
                 0.5
             ],
-            "scaling": [
-                1.0,
-                0.9999999,
-                1.0
-            ],
+            "name": "porta dx",
             "translation": [
                 -0.8969993,
                 -0.0001543,
                 1.0359201
-            ],
-            "name": "porta dx"
+            ]
         },
         "aacabcfd-fcb0-45b6-a707-6c3e4e50b5cf": {
             "link": {
@@ -3802,7 +3856,7 @@
                             ]
                         }
                     },
-                    "active": false
+                    "active": true
                 },
                 {
                     "type": "sliding-door-animator",
@@ -4780,6 +4834,1894 @@
                     },
                     "active": false
                 }
+            ]
+        },
+        "7c968f1d-65a9-4a31-b9f4-1ca23a5fb0fc": {
+            "name": "Walls",
+            "parent": "c37656ac-f1db-416f-b6e8-eefcfc909977"
+        },
+        "f43d8901-b052-4900-a17e-006719883750": {
+            "name": "PhysicsBody",
+            "parent": "7c968f1d-65a9-4a31-b9f4-1ca23a5fb0fc",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                10.0,
+                                3.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                53.3297424,
+                3.0,
+                -0.3546256
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "hiddenForLightBaking": false
+        },
+        "99941da6-23d3-4f75-a9ca-18e845532c1f": {
+            "name": "PhysicsBody",
+            "parent": "7c968f1d-65a9-4a31-b9f4-1ca23a5fb0fc",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                8.8000001,
+                                3.5,
+                                0.5
+                            ]
+                        },
+                        "rotationOffset": [
+                            0.0,
+                            0.7071068,
+                            0.0,
+                            0.7071068
+                        ],
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                45.4431648,
+                3.0,
+                6.6209015
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "hiddenForLightBaking": false
+        },
+        "e45cd161-018b-41a3-afb4-fb38daa5f0c9": {
+            "name": "PhysicsBody",
+            "parent": "7c968f1d-65a9-4a31-b9f4-1ca23a5fb0fc",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                8.5,
+                                3.5,
+                                0.5
+                            ]
+                        },
+                        "rotationOffset": [
+                            0.0,
+                            0.7071068,
+                            0.0,
+                            0.7071068
+                        ],
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                45.4431648,
+                3.0,
+                24.9832115
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "hiddenForLightBaking": false
+        },
+        "fdba3779-2049-4df6-9d9c-224a98049dc8": {
+            "name": "PhysicsBody",
+            "parent": "7c968f1d-65a9-4a31-b9f4-1ca23a5fb0fc",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                10.8000001,
+                                3.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                54.0152587,
+                3.0,
+                32.0249938
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "hiddenForLightBaking": false
+        },
+        "4b133e13-bc32-4a3e-9271-14ac7e6234f3": {
+            "name": "PhysicsBody",
+            "parent": "7c968f1d-65a9-4a31-b9f4-1ca23a5fb0fc",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                13.0,
+                                3.5,
+                                0.5
+                            ]
+                        },
+                        "rotationOffset": [
+                            0.0,
+                            0.7071068,
+                            0.0,
+                            0.7071068
+                        ],
+                        "groups": 2,
+                        "block": 1,
+                        "static": true
+                    }
+                }
+            ],
+            "translation": [
+                61.5745048,
+                3.0,
+                10.3977413
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "hiddenForLightBaking": false
+        },
+        "8bffeb8d-07bd-4016-ac75-5e07eecc8cc0": {
+            "name": "PhysicsBody",
+            "parent": "7c968f1d-65a9-4a31-b9f4-1ca23a5fb0fc",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                1.0,
+                                3.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                62.537918,
+                3.0,
+                21.1675796
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "hiddenForLightBaking": false
+        },
+        "1e035214-a1c9-4323-bcfd-dac6f96e11b6": {
+            "name": "PhysicsBody",
+            "parent": "7c968f1d-65a9-4a31-b9f4-1ca23a5fb0fc",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                6.0,
+                                3.5,
+                                0.5
+                            ]
+                        },
+                        "rotationOffset": [
+                            0.0,
+                            0.7071068,
+                            0.0,
+                            0.7071068
+                        ],
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                62.9355621,
+                3.0,
+                26.5900001
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "hiddenForLightBaking": false
+        },
+        "0ef5537a-4ea9-4c57-8447-3f4bd3ed01f0": {
+            "name": "Walls",
+            "parent": "330adfd5-80e6-4193-88ec-128b2cda93a8"
+        },
+        "f8e21705-a9cf-4b80-b735-9769bf7ab054": {
+            "name": "PhysicsBody",
+            "parent": "0ef5537a-4ea9-4c57-8447-3f4bd3ed01f0",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                13.0,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                3.7973802,
+                5.8000001,
+                -3.4906311
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "hiddenForLightBaking": false
+        },
+        "ef9b829a-f9bd-4a2a-b53d-c1035db1897d": {
+            "name": "PhysicsBody",
+            "parent": "0ef5537a-4ea9-4c57-8447-3f4bd3ed01f0",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                10.3000001,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                6.0854825,
+                5.8000001,
+                34.0368576
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "hiddenForLightBaking": false
+        },
+        "c7a7052a-d512-4238-906f-ddc116dc38f2": {
+            "name": "PhysicsBody",
+            "parent": "0ef5537a-4ea9-4c57-8447-3f4bd3ed01f0",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                9.5,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                -6.8139982,
+                5.8000001,
+                4.0608086
+            ],
+            "rotation": [
+                -0.0,
+                0.7071068,
+                0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9999465,
+                1.0,
+                0.9999465
+            ],
+            "hiddenForLightBaking": false
+        },
+        "3e0d6f2a-0f36-40e8-9ce3-24ba9105499c": {
+            "name": "PhysicsBody",
+            "parent": "0ef5537a-4ea9-4c57-8447-3f4bd3ed01f0",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                9.3000001,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                -6.8139543,
+                5.8000001,
+                23.9352035
+            ],
+            "rotation": [
+                -0.0,
+                0.7071068,
+                0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9999334,
+                1.0,
+                0.9999334
+            ],
+            "hiddenForLightBaking": false
+        },
+        "2ba593be-5a4a-4b45-91d3-94b995e5ea0f": {
+            "name": "PhysicsBody",
+            "parent": "0ef5537a-4ea9-4c57-8447-3f4bd3ed01f0",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                10.0,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                14.2665042,
+                5.8000001,
+                4.6799368
+            ],
+            "rotation": [
+                -0.0,
+                0.7071068,
+                0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9999042,
+                1.0,
+                0.9999042
+            ],
+            "hiddenForLightBaking": false
+        },
+        "af4140f9-c2d3-4a72-bbe5-96c6aad454e0": {
+            "name": "PhysicsBody",
+            "parent": "0ef5537a-4ea9-4c57-8447-3f4bd3ed01f0",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                10.0,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                14.2664651,
+                5.8000001,
+                26.1491985
+            ],
+            "rotation": [
+                -0.0,
+                0.7071068,
+                0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998973,
+                1.0,
+                0.9998973
+            ],
+            "hiddenForLightBaking": false
+        },
+        "64926e0b-d686-45c2-ad77-f2c35791316c": {
+            "name": "PhysicsBody",
+            "parent": "0ef5537a-4ea9-4c57-8447-3f4bd3ed01f0",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                1.75,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                -2.1993417,
+                5.8000001,
+                33.0028114
+            ],
+            "rotation": [
+                -0.0,
+                0.7071068,
+                0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998765,
+                1.0,
+                0.9998765
+            ],
+            "hiddenForLightBaking": false
+        },
+        "4cbb0e45-ca2c-42a0-b48c-5a82e1b7ea97": {
+            "name": "PhysicsBody",
+            "parent": "0ef5537a-4ea9-4c57-8447-3f4bd3ed01f0",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                3.25,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                -4.3907938,
+                5.8000001,
+                31.4008922
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "hiddenForLightBaking": false
+        },
+        "7d77de55-1948-499f-9658-9e3d092735db": {
+            "name": "PhysicsBody",
+            "parent": "0ef5537a-4ea9-4c57-8447-3f4bd3ed01f0",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                2.75,
+                                4.8000001,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                -6.7876205,
+                7.9688749,
+                14.1271352
+            ],
+            "rotation": [
+                -0.0,
+                0.7071068,
+                0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9999207,
+                1.0,
+                0.9999207
+            ],
+            "hiddenForLightBaking": false
+        },
+        "16df9c31-07e2-4d06-8de0-fd55622bc1c0": {
+            "name": "PhysicsBody",
+            "parent": "0ef5537a-4ea9-4c57-8447-3f4bd3ed01f0",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                2.9,
+                                4.5999999,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                14.2542495,
+                7.9688744,
+                15.3822011
+            ],
+            "rotation": [
+                -0.0,
+                0.7071068,
+                0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998951,
+                1.0,
+                0.9998951
+            ],
+            "hiddenForLightBaking": false
+        },
+        "cdeac74b-c83c-43d3-bf28-0ec4c85f9168": {
+            "name": "PhysicsBody",
+            "parent": "7c968f1d-65a9-4a31-b9f4-1ca23a5fb0fc",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                2.9,
+                                0.8,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                45.3233413,
+                5.1679525,
+                15.913269
+            ],
+            "rotation": [
+                -0.0,
+                0.7071068,
+                -0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998638,
+                1.0,
+                0.9998638
+            ],
+            "hiddenForLightBaking": false
+        },
+        "aa2c090a-bf12-4b82-874f-0a6d7324c7dd": {
+            "name": "Walls",
+            "parent": "6c5d5d04-907a-423e-a417-75c471fa92bc"
+        },
+        "3bc1c5fc-1227-4367-b0c5-40dcb9acee29": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                12.3000001,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                -69.0845184,
+                6.4703512,
+                26.0545024
+            ],
+            "rotation": [
+                0.0,
+                0.7071068,
+                -0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998966,
+                1.0,
+                0.9998966
+            ],
+            "hiddenForLightBaking": false
+        },
+        "cae27d32-d219-46f8-b0a0-a2a313919f25": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                6.5999999,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                -55.0311584,
+                6.4703512,
+                27.6108131
+            ],
+            "rotation": [
+                0.0,
+                0.7071068,
+                -0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998723,
+                1.0,
+                0.9998723
+            ],
+            "hiddenForLightBaking": false
+        },
+        "2d6c618c-cc7e-4341-9402-6c44f32c817f": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                4.0,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                -50.7801475,
+                6.4703512,
+                19.2674751
+            ],
+            "rotation": [
+                0.0,
+                0.7071068,
+                -0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998548,
+                1.0,
+                0.9998548
+            ],
+            "hiddenForLightBaking": false
+        },
+        "ae228678-4d5a-45d0-89ae-0663136d6f9a": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                3.4,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                -55.1090126,
+                6.4703512,
+                38.8164291
+            ],
+            "rotation": [
+                0.0,
+                0.7071068,
+                -0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998378,
+                1.0,
+                0.9998378
+            ],
+            "hiddenForLightBaking": false
+        },
+        "c35d26fc-1a04-4d9c-973d-66e8e346cb0f": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                2.2,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                -52.9017982,
+                6.4703507,
+                34.4015769
+            ],
+            "rotation": [
+                -0.0,
+                0.7071068,
+                -2.107342389479072e-8,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998198,
+                1.0,
+                0.9998198
+            ],
+            "hiddenForLightBaking": false
+        },
+        "7cb445d4-99fc-4b30-be32-bba3e86aa560": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                1.2999999,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                -54.569374,
+                6.4703502,
+                15.2928085
+            ],
+            "rotation": [
+                -0.0,
+                0.7071068,
+                -2.107342389479072e-8,
+                0.7071067
+            ],
+            "scaling": [
+                0.9997982,
+                1.0,
+                0.9997982
+            ],
+            "hiddenForLightBaking": false
+        },
+        "6b6fd202-049e-43e4-bf81-0c5ceaa2f198": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                1.2,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                -65.8223876,
+                6.4703283,
+                15.1543426
+            ],
+            "rotation": [
+                -0.0,
+                0.7071068,
+                -2.107342567114756e-8,
+                0.7071067
+            ],
+            "scaling": [
+                0.9997913,
+                1.0,
+                0.9997913
+            ],
+            "hiddenForLightBaking": false
+        },
+        "7c7a5a92-095d-4e73-bc7a-f545e18fba09": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                3.5,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1
+                    }
+                }
+            ],
+            "translation": [
+                -66.8670196,
+                6.4703221,
+                38.7266731
+            ],
+            "rotation": [
+                -0.0,
+                0.7071068,
+                -2.107342567114756e-8,
+                0.7071067
+            ],
+            "scaling": [
+                0.9997538,
+                1.0,
+                0.9997538
+            ],
+            "hiddenForLightBaking": false
+        },
+        "9d28c05e-b979-434c-8997-603eac908749": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                7.5,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1,
+                        "rotationOffset": [
+                            0.0,
+                            0.7071068,
+                            0.0,
+                            0.7071068
+                        ]
+                    }
+                }
+            ],
+            "translation": [
+                -60.9465713,
+                6.4703512,
+                41.8130722
+            ],
+            "rotation": [
+                0.0,
+                0.7071068,
+                -0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998848,
+                1.0,
+                0.9998848
+            ],
+            "hiddenForLightBaking": false
+        },
+        "63f0ba2e-4324-4c2b-a1a9-3b034b0dd5c3": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                1.7,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1,
+                        "rotationOffset": [
+                            0.0,
+                            0.7071068,
+                            0.0,
+                            0.7071068
+                        ]
+                    }
+                }
+            ],
+            "translation": [
+                -68.0391845,
+                6.4703512,
+                35.9320297
+            ],
+            "rotation": [
+                0.0,
+                0.7071068,
+                -0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998555,
+                1.0,
+                0.9998555
+            ],
+            "hiddenForLightBaking": false
+        },
+        "5853db29-71d0-4543-9f49-d576083c6587": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                1.7999999,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1,
+                        "rotationOffset": [
+                            0.0,
+                            0.7071068,
+                            0.0,
+                            0.7071068
+                        ]
+                    }
+                }
+            ],
+            "translation": [
+                -54.0145378,
+                6.4703512,
+                35.9318847
+            ],
+            "rotation": [
+                0.0,
+                0.7071068,
+                -0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998462,
+                1.0,
+                0.9998462
+            ],
+            "hiddenForLightBaking": false
+        },
+        "47842eec-90b9-4aaf-8d44-423eb9e8b1dd": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                1.7999999,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1,
+                        "rotationOffset": [
+                            0.0,
+                            0.7071068,
+                            0.0,
+                            0.7071068
+                        ]
+                    }
+                }
+            ],
+            "translation": [
+                -54.0144348,
+                6.4703512,
+                32.8934478
+            ],
+            "rotation": [
+                0.0,
+                0.7071068,
+                -0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998387,
+                1.0,
+                0.9998387
+            ],
+            "hiddenForLightBaking": false
+        },
+        "8eeac03d-a9b1-4d5f-8ed4-e7eac12a492a": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                3.0,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1,
+                        "rotationOffset": [
+                            0.0,
+                            0.7071068,
+                            0.0,
+                            0.7071068
+                        ]
+                    }
+                }
+            ],
+            "translation": [
+                -52.9350929,
+                6.4703512,
+                22.5527992
+            ],
+            "rotation": [
+                -0.0,
+                0.7071068,
+                -2.107342567114756e-8,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998268,
+                1.0,
+                0.9998268
+            ],
+            "hiddenForLightBaking": false
+        },
+        "d59ae92f-4e62-4390-a848-fe6c713fe3b1": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                2.75,
+                                7.5,
+                                0.3
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1,
+                        "rotationOffset": [
+                            0.0,
+                            0.7071068,
+                            0.0,
+                            0.7071068
+                        ]
+                    }
+                }
+            ],
+            "translation": [
+                -52.7465209,
+                6.4703512,
+                16.0274124
+            ],
+            "rotation": [
+                -0.0,
+                0.7071068,
+                -2.107342389479072e-8,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998049,
+                1.0,
+                0.9998049
+            ],
+            "hiddenForLightBaking": false
+        },
+        "1479917d-4330-47a2-9954-202e21e0011d": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                2.4,
+                                7.5,
+                                0.3
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1,
+                        "rotationOffset": [
+                            0.0,
+                            0.7071068,
+                            0.0,
+                            0.7071068
+                        ]
+                    }
+                }
+            ],
+            "translation": [
+                -67.6515579,
+                6.4703497,
+                16.2988166
+            ],
+            "rotation": [
+                -0.0,
+                0.7071068,
+                -2.107342389479072e-8,
+                0.7071067
+            ],
+            "scaling": [
+                0.9997854,
+                1.0,
+                0.9997854
+            ],
+            "hiddenForLightBaking": false
+        },
+        "6af3c51a-d8d1-4737-bea2-830432918033": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                2.2999999,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1,
+                        "rotationOffset": [
+                            0.0,
+                            0.7071068,
+                            0.0,
+                            0.7071068
+                        ]
+                    }
+                }
+            ],
+            "translation": [
+                -56.3274383,
+                6.4703512,
+                14.5866699
+            ],
+            "rotation": [
+                0.0,
+                0.7071068,
+                -0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998481,
+                1.0,
+                0.9998481
+            ],
+            "hiddenForLightBaking": false
+        },
+        "f3da807a-a7c1-4085-b3fd-6fb9d995bb89": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                2.2999999,
+                                7.5,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1,
+                        "rotationOffset": [
+                            0.0,
+                            0.7071068,
+                            0.0,
+                            0.7071068
+                        ]
+                    }
+                }
+            ],
+            "translation": [
+                -64.1661758,
+                6.4703512,
+                14.5866432
+            ],
+            "rotation": [
+                0.0,
+                0.7071068,
+                -0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998399,
+                1.0,
+                0.9998399
+            ],
+            "hiddenForLightBaking": false
+        },
+        "88335880-9efb-4657-90fa-0a89fd14eee0": {
+            "name": "PhysicsBody",
+            "parent": "aa2c090a-bf12-4b82-874f-0a6d7324c7dd",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                2.5,
+                                5.0,
+                                0.5
+                            ]
+                        },
+                        "static": true,
+                        "groups": 2,
+                        "block": 1,
+                        "rotationOffset": [
+                            0.0,
+                            0.7071068,
+                            0.0,
+                            0.7071068
+                        ]
+                    }
+                }
+            ],
+            "translation": [
+                -60.2528915,
+                8.5314245,
+                14.5866203
+            ],
+            "rotation": [
+                -0.0,
+                0.7071068,
+                -2.107342389479072e-8,
+                0.7071067
+            ],
+            "scaling": [
+                0.9998148,
+                1.0,
+                0.9998148
+            ],
+            "hiddenForLightBaking": false
+        },
+        "3a3636e9-b8a1-414e-beaf-20a4c792b27f": {
+            "name": "PhysicsBody.000",
+            "parent": "47ea9d94-e9bd-4119-9007-5da45e837b3e",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "static": true,
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                0.6499999,
+                                2.25,
+                                0.75
+                            ]
+                        }
+                    },
+                    "active": true
+                }
+            ],
+            "translation": [
+                -70.062561,
+                1.8706592,
+                27.5919494
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "123b99b9-fb5d-42d1-9148-2c271aa3fff9": {
+            "name": "PhysicsBody.000",
+            "parent": "47ea9d94-e9bd-4119-9007-5da45e837b3e",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "static": true,
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                0.6499999,
+                                2.25,
+                                0.75
+                            ]
+                        }
+                    },
+                    "active": true
+                }
+            ],
+            "translation": [
+                -79.5662231,
+                1.8706592,
+                27.5919494
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "0edf723e-2065-4d76-a400-72d39aa57f79": {
+            "name": "PhysicsBody.001",
+            "parent": "2178dda8-9def-4156-8d1f-f23a1d06d1d8",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                2.9,
+                                1.0,
+                                1.7
+                            ]
+                        },
+                        "static": false,
+                        "groups": 2,
+                        "block": 1,
+                        "kinematic": true,
+                        "gravity": false
+                    }
+                }
+            ],
+            "translation": [
+                -0.2984262,
+                0.6446796,
+                -0.0133982
+            ],
+            "rotation": [
+                0.4999913,
+                -0.4999892,
+                -0.5000095,
+                0.5000097
+            ],
+            "scaling": [
+                0.8585861,
+                0.9062849,
+                0.4647614
+            ]
+        },
+        "86a6e47e-652c-47c8-93cf-1238d3189e48": {
+            "name": "PhysicsBody.001",
+            "parent": "883b42f7-8dc7-4b45-b3de-4c2beb909cf0",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                2.9,
+                                1.0,
+                                1.7
+                            ]
+                        },
+                        "static": false,
+                        "groups": 2,
+                        "block": 1,
+                        "kinematic": true,
+                        "gravity": false
+                    }
+                }
+            ],
+            "translation": [
+                0.2314749,
+                0.6446748,
+                -0.0232142
+            ],
+            "rotation": [
+                0.4999913,
+                -0.4999892,
+                -0.5000095,
+                0.5000097
+            ],
+            "scaling": [
+                0.8585861,
+                0.9062849,
+                0.4647614
+            ]
+        },
+        "5804a89a-8f50-44ff-9f10-a36e8270a280": {
+            "name": "PhysicsBody.001",
+            "parent": "729687ce-4ea1-4dae-9c78-e8ab5495fd92",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                2.9,
+                                0.8,
+                                1.7
+                            ]
+                        },
+                        "static": false,
+                        "groups": 2,
+                        "block": 1,
+                        "kinematic": true,
+                        "gravity": false
+                    }
+                }
+            ],
+            "translation": [
+                -0.4130138,
+                0.7567071,
+                0.114377
+            ],
+            "rotation": [
+                0.4999943,
+                -0.4999957,
+                -0.5000064,
+                0.5000034
+            ],
+            "scaling": [
+                0.8947384,
+                1.841669,
+                0.5112384
+            ]
+        },
+        "c01aadca-cfda-46b3-af3d-0bd885b16bfa": {
+            "name": "PhysicsBody.001",
+            "parent": "3436cead-1249-4494-968e-8afc8731345a",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                2.9,
+                                0.8,
+                                1.7
+                            ]
+                        },
+                        "static": false,
+                        "groups": 2,
+                        "block": 1,
+                        "kinematic": true,
+                        "gravity": false
+                    }
+                }
+            ],
+            "translation": [
+                0.3726442,
+                0.756922,
+                0.11227
+            ],
+            "rotation": [
+                0.4999943,
+                -0.4999957,
+                -0.5000064,
+                0.5000034
+            ],
+            "scaling": [
+                0.8947384,
+                1.841669,
+                0.5112384
+            ]
+        },
+        "e4881993-3690-4c0d-8c5a-ec6363d7db6e": {
+            "name": "PhysicsBody.001",
+            "parent": "4b699249-71ea-4272-aa14-10b8d79bbac3",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                2.7,
+                                0.8,
+                                1.5
+                            ]
+                        },
+                        "static": false,
+                        "groups": 2,
+                        "block": 1,
+                        "kinematic": true,
+                        "gravity": false
+                    }
+                }
+            ],
+            "translation": [
+                -0.347715,
+                0.754428,
+                0.049141
+            ],
+            "rotation": [
+                0.4999957,
+                -0.499998,
+                -0.5000052,
+                0.5000009
+            ],
+            "scaling": [
+                0.8975083,
+                3.8025038,
+                0.2930172
+            ]
+        },
+        "26963398-3edf-453c-9ca1-cc8992bbccbd": {
+            "name": "PhysicsBody.001",
+            "parent": "aacabcfd-fcb0-45b6-a707-6c3e4e50b5cf",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                2.7,
+                                0.8,
+                                1.5
+                            ]
+                        },
+                        "static": false,
+                        "groups": 2,
+                        "block": 1,
+                        "kinematic": true,
+                        "gravity": false
+                    }
+                }
+            ],
+            "translation": [
+                0.3414096,
+                0.7550334,
+                0.0404816
+            ],
+            "rotation": [
+                -0.4999953,
+                0.4999988,
+                0.5000059,
+                -0.4999998
+            ],
+            "scaling": [
+                0.897509,
+                3.8025059,
+                0.2930173
+            ]
+        },
+        "943ca3b5-6733-42ec-bde3-81677256d51c": {
+            "name": "PhysicsBody.002",
+            "parent": "6a88ff7f-6a27-4dd7-8fe1-bba12c30fe4c",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "gravity": false,
+                        "kinematic": true,
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                1.5499999,
+                                2.65,
+                                0.6
+                            ]
+                        }
+                    }
+                }
+            ],
+            "translation": [
+                -0.2858724,
+                0.6890746,
+                -0.1022292
+            ],
+            "rotation": [
+                -0.0000011,
+                3.387692260048425e-8,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "298a8b65-0bb1-4bf4-81ad-fdb938f3f5dd": {
+            "name": "PhysicsBody.002",
+            "parent": "f57d499e-1cbc-4d36-b45b-134fac4b4754",
+            "components": [
+                {
+                    "type": "physx",
+                    "physx": {
+                        "gravity": false,
+                        "kinematic": true,
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                1.5499999,
+                                2.65,
+                                0.6
+                            ]
+                        }
+                    }
+                }
+            ],
+            "translation": [
+                0.3341065,
+                0.6893479,
+                -0.0995633
+            ],
+            "rotation": [
+                -0.000002,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0000001,
+                1.0000001,
+                1.0000001
             ]
         }
     },
