@@ -796,6 +796,22 @@
                     "type": "pp-mute-everything",
                     "active": false
                 }
+            ],
+            "translation": [
+                5.2598266,
+                0.0,
+                18.4870281
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
             ]
         },
         "f068fda9-1cee-4714-9a63-95aa8db22769": {
@@ -806,7 +822,7 @@
                     "type": "mesh",
                     "mesh": {
                         "mesh": "p1",
-                        "material": "a90d6b77-6005-4c6a-8ade-8fdba417107b"
+                        "material": "410a4498-85fc-46a6-90a5-b8d88a720fe1"
                     }
                 },
                 {
@@ -3067,7 +3083,41 @@
                 "name": "grass_pane2<base_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
             },
-            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e"
+            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "48748633-a251-4868-82af-983f31143585",
+                        "mesh": "a3807e5b-65f7-43a8-b760-ea2890e803dd"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "410a4498-85fc-46a6-90a5-b8d88a720fe1",
+                        "mesh": "7a7718bf-3a67-49bf-8398-f17d124a23fd"
+                    },
+                    "active": false
+                }
+            ],
+            "translation": [
+                -0.6500368,
+                -0.1199999,
+                -62.2591934
+            ],
+            "rotation": [
+                -7.55607985070128e-8,
+                0.9999904,
+                -8.940668294599163e-8,
+                0.0043633
+            ],
+            "scaling": [
+                0.9999943,
+                1.0,
+                0.9999943
+            ]
         },
         "db304e2e-d624-4699-9124-d3407942ca0e": {
             "link": {
@@ -3082,14 +3132,64 @@
                 "name": "grass_pane3<base_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
             },
-            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e"
+            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e",
+            "translation": [
+                0.0000057,
+                4.3958425521850586e-7,
+                -48.3686218
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "48748633-a251-4868-82af-983f31143585",
+                        "mesh": "0fa75018-5929-403b-8d43-ceafad9603b6"
+                    },
+                    "active": false
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "410a4498-85fc-46a6-90a5-b8d88a720fe1",
+                        "mesh": "8d28bcfc-3717-4b90-b051-8ec24cc5fc02"
+                    },
+                    "active": false
+                }
+            ]
         },
         "03a4915f-f508-470d-ae80-66a112ae3d7b": {
             "link": {
                 "name": "grass_pane4<base_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
             },
-            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e"
+            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e",
+            "translation": [
+                8.940162956605491e-7,
+                0.0000025,
+                -7.2325658
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
         },
         "89bf7ac3-99c8-4da5-b87e-bbf1c0818440": {
             "link": {
@@ -3103,42 +3203,138 @@
                 "name": "polySurface20<grass_pane5<base_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
             },
-            "parent": "89bf7ac3-99c8-4da5-b87e-bbf1c0818440"
+            "parent": "89bf7ac3-99c8-4da5-b87e-bbf1c0818440",
+            "translation": [
+                8.940162956605491e-7,
+                0.0000025,
+                -7.2325658
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
         },
         "b71f1b59-31d4-46de-93bd-9acc75fd77bb": {
             "link": {
                 "name": "pavement<grass_pane5<base_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
             },
-            "parent": "89bf7ac3-99c8-4da5-b87e-bbf1c0818440"
+            "parent": "89bf7ac3-99c8-4da5-b87e-bbf1c0818440",
+            "translation": [
+                8.940162956605491e-7,
+                0.0000025,
+                -7.2325658
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
         },
         "7654bdff-b6ef-44af-9d8a-045a0c5cb020": {
             "link": {
                 "name": "grass_pane6<base_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
             },
-            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e"
+            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e",
+            "translation": [
+                -20.3147315,
+                0.000003,
+                -0.1870366
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
         },
         "ba6e7d3f-6852-4101-8f47-cf3253db363f": {
             "link": {
                 "name": "grass_pane7<base_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
             },
-            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e"
+            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e",
+            "translation": [
+                -20.3147315,
+                0.000003,
+                -0.1870366
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
         },
         "75a4a656-daad-44f7-b368-a34746e428ab": {
             "link": {
                 "name": "grass_pane8<base_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
             },
-            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e"
+            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e",
+            "translation": [
+                -20.3147315,
+                0.000003,
+                -0.1870366
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
         },
         "55ccdb84-ef0b-4602-96b4-14bf0f1fd6ad": {
             "link": {
                 "name": "grass_pane9<base_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
             },
-            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e"
+            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e",
+            "translation": [
+                -20.3147315,
+                0.000003,
+                -0.1870366
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
         },
         "38c7890b-1bfd-4b53-913f-bd1f0905a6de": {
             "link": {
@@ -3159,7 +3355,23 @@
                 "name": "grass_pane12<base_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
             },
-            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e"
+            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e",
+            "translation": [
+                8.940162956605491e-7,
+                0.0000025,
+                -7.2325658
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
         },
         "417257f4-dfad-4f1a-9221-a37fd7308fc1": {
             "link": {
@@ -3180,14 +3392,40 @@
                 "name": "grass_pane13<base_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
             },
-            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e"
+            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e",
+            "translation": [
+                8.940162956605491e-7,
+                0.0000025,
+                -7.2325658
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
         },
         "b5c6b87e-1d86-4508-ad0a-35b5f7405c65": {
             "link": {
                 "name": "pavement2<base_grp<geo_grp",
                 "file": "assets\\university-campus\\source\\basic_campus.fbx"
             },
-            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e"
+            "parent": "25b3b2d1-732c-46de-b291-447badc43e2e",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "50e9547e-e87e-4c4e-a826-50620106eb0b",
+                        "mesh": "3f3ecddf-4330-414d-88c5-4a68de14dd8a"
+                    },
+                    "active": false
+                }
+            ]
         },
         "70a966bf-7b93-46b6-9502-e6cca5e32167": {
             "link": {
@@ -3203,6 +3441,22 @@
                         "mesh": "a339bb7c-99bf-442a-915b-eb9419f98859"
                     }
                 }
+            ],
+            "translation": [
+                8.940162956605491e-7,
+                0.0000025,
+                -7.2325658
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
             ]
         },
         "5a1bd19f-f12f-4fd3-b07a-b8498b43a56f": {
@@ -3235,6 +3489,22 @@
                         "mesh": "7fe1ff62-f92e-49db-9130-6a574109e4c2"
                     }
                 }
+            ],
+            "translation": [
+                -20.3147315,
+                0.000003,
+                -0.1870366
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
             ]
         },
         "921c4ebe-4c84-46f0-9342-50c4a002e765": {
@@ -3324,6 +3594,22 @@
                     },
                     "active": true
                 }
+            ],
+            "translation": [
+                -20.3147315,
+                0.6703565,
+                -0.1870366
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
             ]
         },
         "47ea9d94-e9bd-4119-9007-5da45e837b3e": {
@@ -3356,9 +3642,9 @@
             },
             "parent": "f9561029-da92-4eae-a7f6-0fae0be25dd1",
             "translation": [
-                0.4741907,
-                0.000002,
-                0.1968157
+                -19.8405418,
+                0.000005,
+                0.0097791
             ],
             "rotation": [
                 -0.0,
@@ -3379,9 +3665,9 @@
             },
             "parent": "f9561029-da92-4eae-a7f6-0fae0be25dd1",
             "translation": [
-                1.7252458,
-                0.0000033,
-                0.1968159
+                1.7252459,
+                0.0000063,
+                -7.0357427
             ],
             "rotation": [
                 -0.0,
@@ -7479,16 +7765,16 @@
                 }
             ]
         },
-        "4c2d1c26-34da-4002-9261-3a8fe3c9e1ea": {
+        "b8a63ed2-cf8e-4b1e-8c1c-aef30741783a": {
             "link": {
-                "name": "Main Base",
-                "file": "assets\\basketball_court_fbx\\Basketball Court fbx\\Basketball Court.fbx"
+                "name": "Circle",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
             },
-            "parent": "b8a63ed2-cf8e-4b1e-8c1c-aef30741783a",
+            "parent": "cfe9f896-2e12-4dbb-a56c-1d1e27413df2",
             "translation": [
-                0.0,
-                0.0,
-                0.0
+                0.0024208,
+                0.4002695,
+                -8.8086681
             ],
             "rotation": [
                 -0.7071068,
@@ -7497,153 +7783,29 @@
                 0.7071067
             ],
             "scaling": [
-                1.0,
-                0.9999999,
-                0.9999999
-            ]
-        },
-        "dfd10c0c-a065-4305-b720-e2a13348e36a": {
-            "link": {
-                "name": "Basketball Field",
-                "file": "assets\\basketball_court_fbx\\Basketball Court fbx\\Basketball Court.fbx"
-            },
-            "parent": "b8a63ed2-cf8e-4b1e-8c1c-aef30741783a",
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                -0.7071068,
-                0.0,
-                0.0,
-                0.7071067
-            ],
-            "scaling": [
-                1.1,
-                1.0999999,
-                1.0999999
-            ]
-        },
-        "9c34180a-32af-467f-b9a6-ef8b0746b651": {
-            "link": {
-                "name": "Basket Table",
-                "file": "assets\\basketball_court_fbx\\Basketball Court fbx\\Basketball Court.fbx"
-            },
-            "parent": "b8a63ed2-cf8e-4b1e-8c1c-aef30741783a",
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                -0.7071068,
-                0.0,
-                0.0,
-                0.7071067
-            ],
-            "scaling": [
-                1.0,
-                0.9999999,
-                0.9999999
-            ]
-        },
-        "b94c5f79-d572-4902-867d-2a601b4f6bff": {
-            "link": {
-                "name": "Basket  Ring Base",
-                "file": "assets\\basketball_court_fbx\\Basketball Court fbx\\Basketball Court.fbx"
-            },
-            "parent": "b8a63ed2-cf8e-4b1e-8c1c-aef30741783a",
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                -0.7071068,
-                0.0,
-                0.0,
-                0.7071067
-            ],
-            "scaling": [
-                1.0,
-                0.9999999,
-                0.9999999
-            ]
-        },
-        "0ddbe647-7103-4633-9cb3-7f2314c7e5f7": {
-            "link": {
-                "name": "Basket Ring",
-                "file": "assets\\basketball_court_fbx\\Basketball Court fbx\\Basketball Court.fbx"
-            },
-            "parent": "b8a63ed2-cf8e-4b1e-8c1c-aef30741783a",
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                -0.7071068,
-                0.0,
-                0.0,
-                0.7071067
-            ],
-            "scaling": [
-                1.0,
-                0.9999999,
-                0.9999999
+                0.0583253,
+                0.0583253,
+                0.0583253
             ],
             "components": [
                 {
                     "type": "mesh",
                     "mesh": {
-                        "material": "f5093fff-1c74-40c5-a35b-4206a264efa5",
-                        "mesh": "f168f0ff-a843-4c60-a0c9-704777a3ae4e"
-                    }
-                }
-            ]
-        },
-        "1eb261d1-df9e-4227-9d5c-e4c7c2ea7d65": {
-            "link": {
-                "name": "Net",
-                "file": "assets\\basketball_court_fbx\\Basketball Court fbx\\Basketball Court.fbx"
-            },
-            "parent": "b8a63ed2-cf8e-4b1e-8c1c-aef30741783a",
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                -0.7071068,
-                0.0,
-                0.0,
-                0.7071067
-            ],
-            "scaling": [
-                1.0,
-                0.9999999,
-                0.9999999
-            ],
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "ef5ff5cd-16b4-47a7-89fb-3981189470f6",
-                        "material": "b359995e-092a-41c3-91ce-22a8e2c4d84b"
+                        "material": "a1db2200-8fd6-4ed4-8a32-b33b5c66a63e",
+                        "mesh": "7c9db26f-006b-495f-bb4c-e6d749d0370f"
                     }
                 }
             ]
         },
         "2009dede-8337-4a65-bd35-22e30f43c58f": {
             "link": {
-                "name": "Basket Base",
-                "file": "assets\\basketball_court_fbx\\Basketball Court fbx\\Basketball Court.fbx"
+                "name": "Circle.001",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
             },
-            "parent": "b8a63ed2-cf8e-4b1e-8c1c-aef30741783a",
+            "parent": "cfe9f896-2e12-4dbb-a56c-1d1e27413df2",
             "translation": [
                 0.0,
-                0.0,
+                0.272696,
                 0.0
             ],
             "rotation": [
@@ -7653,136 +7815,101 @@
                 0.7071067
             ],
             "scaling": [
-                1.0,
-                0.9999999,
-                0.9999999
-            ]
-        },
-        "cfe9f896-2e12-4dbb-a56c-1d1e27413df2": {
-            "link": {
-                "name": "Basket Table.001",
-                "file": "assets\\basketball_court_fbx\\Basketball Court fbx\\Basketball Court.fbx"
-            },
-            "parent": "b8a63ed2-cf8e-4b1e-8c1c-aef30741783a",
-            "translation": [
-                0.0,
-                0.0,
-                0.0
+                1.6190685,
+                1.6190683,
+                1.6190683
             ],
-            "rotation": [
-                -0.7071068,
-                0.0,
-                0.0,
-                0.7071067
-            ],
-            "scaling": [
-                1.0,
-                0.9999999,
-                0.9999999
-            ]
-        },
-        "8f7e6e39-4eda-4151-825c-d42333656769": {
-            "link": {
-                "name": "Basket  Ring Base.001",
-                "file": "assets\\basketball_court_fbx\\Basketball Court fbx\\Basketball Court.fbx"
-            },
-            "parent": "b8a63ed2-cf8e-4b1e-8c1c-aef30741783a",
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                -0.7071068,
-                0.0,
-                0.0,
-                0.7071067
-            ],
-            "scaling": [
-                1.0,
-                0.9999999,
-                0.9999999
-            ]
-        },
-        "a41535e1-6dcf-4c1b-86ae-4aed11b0a258": {
-            "link": {
-                "name": "Basket Ring.001",
-                "file": "assets\\basketball_court_fbx\\Basketball Court fbx\\Basketball Court.fbx"
-            },
-            "parent": "b8a63ed2-cf8e-4b1e-8c1c-aef30741783a",
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                -0.7071068,
-                0.0,
-                0.0,
-                0.7071067
-            ],
-            "scaling": [
-                1.0,
-                0.9999999,
-                0.9999999
-            ]
-        },
-        "e9c0c2bf-48c8-4170-be38-a925d2a13b56": {
-            "link": {
-                "name": "Net.001",
-                "file": "assets\\basketball_court_fbx\\Basketball Court fbx\\Basketball Court.fbx"
-            },
-            "parent": "b8a63ed2-cf8e-4b1e-8c1c-aef30741783a",
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                -0.7071068,
-                0.0,
-                0.0,
-                0.7071067
-            ],
-            "scaling": [
-                1.0,
-                0.9999999,
-                0.9999999
-            ]
-        },
-        "8c6e80c6-9dd8-44a7-b426-1147eeede999": {
-            "link": {
-                "name": "Basket Base.001",
-                "file": "assets\\basketball_court_fbx\\Basketball Court fbx\\Basketball Court.fbx"
-            },
-            "parent": "b8a63ed2-cf8e-4b1e-8c1c-aef30741783a",
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                -0.7071068,
-                0.0,
-                0.0,
-                0.7071067
-            ],
-            "scaling": [
-                1.0,
-                0.9999999,
-                0.9999999
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "e9b1d527-473e-4574-bc69-abd4737b6d47",
+                        "material": "9c8cc01b-fa51-4eec-8157-b808e8eeb583"
+                    }
+                }
             ]
         },
         "98e4790a-5b3d-496b-a1fc-0de3f46e45b0": {
             "link": {
-                "name": "Fence",
-                "file": "assets\\basketball_court_fbx\\Basketball Court fbx\\Basketball Court.fbx"
+                "name": "Circle.002",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
             },
-            "parent": "b8a63ed2-cf8e-4b1e-8c1c-aef30741783a",
+            "parent": "cfe9f896-2e12-4dbb-a56c-1d1e27413df2",
             "translation": [
                 0.0,
+                0.34662,
+                -9.9861927
+            ],
+            "rotation": [
+                -0.7071068,
                 0.0,
-                0.0
+                0.0,
+                0.7071067
+            ],
+            "scaling": [
+                5.9712357,
+                5.9712352,
+                5.9712352
+            ],
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "4817f1ca-d403-4517-96cc-a377adc1421a",
+                        "material": "9c8cc01b-fa51-4eec-8157-b808e8eeb583"
+                    }
+                }
+            ]
+        },
+        "8c6e80c6-9dd8-44a7-b426-1147eeede999": {
+            "link": {
+                "name": "Circle.003",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            },
+            "parent": "cfe9f896-2e12-4dbb-a56c-1d1e27413df2",
+            "translation": [
+                -0.0163947,
+                3.3900001,
+                6.7283716
+            ],
+            "rotation": [
+                -0.7071068,
+                0.0,
+                0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.310237,
+                0.310237,
+                0.310237
+            ],
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "cffc8c8c-c158-4950-88b3-de627375c2ed",
+                        "mesh": "e6c28ae1-17ad-42ca-af0a-05d7e6297301"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "668104f2-b5ad-479d-832e-4d2090806963",
+                        "mesh": "2f54659b-01d6-4544-bd1d-9c705ec7b285"
+                    }
+                }
+            ]
+        },
+        "e9c0c2bf-48c8-4170-be38-a925d2a13b56": {
+            "link": {
+                "name": "Cube",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            },
+            "parent": "cfe9f896-2e12-4dbb-a56c-1d1e27413df2",
+            "translation": [
+                0.0,
+                0.0469999,
+                4.4703483581542975e-8
             ],
             "rotation": [
                 -0.7071068,
@@ -7794,26 +7921,657 @@
                 1.0,
                 0.9999999,
                 0.9999999
+            ],
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "668104f2-b5ad-479d-832e-4d2090806963",
+                        "mesh": "fc466922-01a9-45bb-a379-6df8c213b857"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "a1db2200-8fd6-4ed4-8a32-b33b5c66a63e",
+                        "mesh": "6e67ebce-624b-4b05-a898-49f1b8a761d3"
+                    }
+                }
             ]
         },
-        "b8a63ed2-cf8e-4b1e-8c1c-aef30741783a": {
-            "name": "BasketBall Court",
-            "parent": "ea2d149d-d18c-4968-afde-0b9c1f7ecd3f",
+        "a41535e1-6dcf-4c1b-86ae-4aed11b0a258": {
+            "link": {
+                "name": "Cube.001",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            },
+            "parent": "cfe9f896-2e12-4dbb-a56c-1d1e27413df2",
             "translation": [
-                0.8341853,
-                0.2731239,
-                -32.2001228
+                6.5603408,
+                0.7052334,
+                -3.0215559
             ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "54dfe506-427e-4afe-9af3-27f8c7d55875",
+                        "mesh": "68023fe1-e3f6-4e1c-9d68-a254f3c7f904"
+                    }
+                }
             ],
             "scaling": [
+                0.0449995,
+                0.0449986,
+                0.0150486
+            ],
+            "rotation": [
+                -2.219937300651509e-7,
+                0.7071077,
+                0.7071058,
+                -2.2197772864274157e-7
+            ]
+        },
+        "8f7e6e39-4eda-4151-825c-d42333656769": {
+            "link": {
+                "name": "Plane",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            },
+            "parent": "cfe9f896-2e12-4dbb-a56c-1d1e27413df2",
+            "translation": [
+                0.0,
+                0.3466202,
+                1.4901161193847656e-8
+            ],
+            "rotation": [
+                -0.7071067,
+                0.0,
+                0.0,
+                0.7071067
+            ],
+            "scaling": [
+                8.9706459,
+                8.9706459,
+                8.9706459
+            ],
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "9c8cc01b-fa51-4eec-8157-b808e8eeb583",
+                        "mesh": "bb8ecf62-7f91-45aa-8995-725474bed89d"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "fbae8217-97df-4ae8-bc61-d05c5399ce5d",
+                        "mesh": "de56e4bc-6545-4816-a5b5-c97e3592c756"
+                    }
+                }
+            ]
+        },
+        "cfe9f896-2e12-4dbb-a56c-1d1e27413df2": {
+            "name": "Basketball Court",
+            "parent": "ea2d149d-d18c-4968-afde-0b9c1f7ecd3f",
+            "translation": [
+                13.2754783,
+                -0.7499921,
+                -71.9624328
+            ],
+            "rotation": [
+                -1.685875901102918e-7,
+                -0.7071059,
+                -1.264333633343995e-7,
+                0.7071076
+            ],
+            "scaling": [
+                2.9499669,
+                2.9502303,
+                2.9499666
+            ]
+        },
+        "58830762-368a-45de-9a71-e0ef50501dc9": {
+            "name": "Interior",
+            "parent": "c37656ac-f1db-416f-b6e8-eefcfc909977",
+            "rotation": [
+                -4.371140249759264e-8,
                 1.0,
+                -7.549790836947069e-8,
+                -0.0
+            ],
+            "translation": [
+                79.6009063,
+                0.1000004,
+                8.1908893
+            ],
+            "scaling": [
+                0.98,
                 1.0,
                 1.0
+            ]
+        },
+        "702883c1-2c01-484d-97a7-66ac31fc7813": {
+            "link": {
+                "name": "Wall_with_door",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "58830762-368a-45de-9a71-e0ef50501dc9",
+            "translation": [
+                -12.9510965,
+                -0.0833309,
+                31.2499542
+            ],
+            "rotation": [
+                2.6692545063156103e-8,
+                -0.7071068,
+                -2.6692548615869786e-8,
+                0.7071067
+            ],
+            "scaling": [
+                0.027,
+                0.023,
+                0.017
+            ]
+        },
+        "29d67448-cd21-46e0-b284-afcd7bbda329": {
+            "link": {
+                "name": "Wall_and_Door1<Wall_with_door",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "702883c1-2c01-484d-97a7-66ac31fc7813",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "863ec61f-2438-46e5-abb7-9c0faea7bca9",
+                        "mesh": "25d09149-40f1-4ba9-b38d-a0efb2cfe961"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "01b9753a-dc79-4daf-a095-a939f24cbcb8",
+                        "mesh": "08582d98-d346-4dc5-b658-9e3d18705ee9"
+                    },
+                    "active": true
+                }
+            ]
+        },
+        "5be4de2e-203a-4171-83ff-603d7b3c32f6": {
+            "link": {
+                "name": "Wall_and_Door<Wall_with_door",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "702883c1-2c01-484d-97a7-66ac31fc7813"
+        },
+        "d96b9851-70d5-49d4-93ae-c459bd791b72": {
+            "link": {
+                "name": "Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "58830762-368a-45de-9a71-e0ef50501dc9",
+            "translation": [
+                -14.0225524,
+                -0.0833309,
+                31.2499389
+            ],
+            "rotation": [
+                -2.837887791429239e-7,
+                -0.7071068,
+                -3.793216478698014e-7,
+                0.7071067
+            ],
+            "scaling": [
+                0.0269999,
+                0.0149999,
+                0.0169999
+            ]
+        },
+        "e836471d-1151-42e5-831e-a9e10fb87964": {
+            "link": {
+                "name": "polySurface83<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "61d6b2a2-9316-4fe0-92f0-49a1b73c5b63",
+                        "mesh": "ac341023-409b-4bda-b7af-852085a92771"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "61d6b2a2-9316-4fe0-92f0-49a1b73c5b63",
+                        "mesh": "5288ab5f-c966-425d-af03-09a45ac48917"
+                    }
+                }
+            ]
+        },
+        "dfeb0fa3-487b-41be-91df-d230edc24b9e": {
+            "link": {
+                "name": "polySurface84<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "28ec4ca0-469c-418d-838e-6475fd600254": {
+            "link": {
+                "name": "polySurface85<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "38d7b4da-5c9e-4609-a596-b6223d091b21": {
+            "link": {
+                "name": "polySurface86<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "88d4ee26-7a29-4965-a7e4-7789041a2447": {
+            "link": {
+                "name": "polySurface87<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "8c322961-0fe9-45c9-bb77-a57e38c6a061": {
+            "link": {
+                "name": "polySurface88<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "e53b98e5-3dfb-485a-b53e-c6e453cebd44": {
+            "link": {
+                "name": "polySurface89<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "c5dbe4d4-d304-4fb0-8879-8d9dbdcba4b8": {
+            "link": {
+                "name": "polySurface90<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "19a35632-1869-4284-90d2-e5fd4069fad8": {
+            "link": {
+                "name": "polySurface91<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "a29b2df6-570e-47dc-bed9-970ad402eaaf": {
+            "link": {
+                "name": "polySurface92<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "146861d8-8d25-4f6a-8053-8d8dde350329": {
+            "link": {
+                "name": "polySurface93<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "bb282837-16c4-4860-8daa-485734441735": {
+            "link": {
+                "name": "polySurface94<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "faeeaf19-8124-445a-b728-957a27ce6bd4": {
+            "link": {
+                "name": "polySurface95<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "797543c7-0829-484d-a942-eb420a56251d": {
+            "link": {
+                "name": "polySurface96<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "825870be-8d24-4e61-9a6e-ce939baf0f92": {
+            "link": {
+                "name": "polySurface97<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "acccaa1a-0c4a-46cf-8cf6-c85fa50f7289": {
+            "link": {
+                "name": "polySurface98<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "366a2b4f-413e-4fc0-a332-eea9bd8e2314": {
+            "link": {
+                "name": "polySurface99<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "33be75fc-e613-4931-a89a-369b0190180c": {
+            "link": {
+                "name": "polySurface100<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "3da8d499-9047-4200-a091-1b9c640009e3": {
+            "link": {
+                "name": "polySurface101<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "ad076d33-3c58-4d72-b9d5-a575af445748": {
+            "link": {
+                "name": "polySurface102<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "beda83f7-7b4b-4a58-9f12-a0721be6aded": {
+            "link": {
+                "name": "polySurface103<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "61d6b2a2-9316-4fe0-92f0-49a1b73c5b63",
+                        "mesh": "738ea7b2-1bbe-4789-a702-f753ca4a28de"
+                    }
+                }
+            ]
+        },
+        "f8eea724-195a-4875-864b-08f45dc04787": {
+            "link": {
+                "name": "transform1<Hero_Desk",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "d96b9851-70d5-49d4-93ae-c459bd791b72"
+        },
+        "9971aaa3-1c81-4e43-b5a9-02667956a025": {
+            "link": {
+                "name": "Floor",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "58830762-368a-45de-9a71-e0ef50501dc9",
+            "translation": [
+                -14.0634994,
+                -0.0833306,
+                31.9956321
+            ],
+            "rotation": [
+                -0.0000215,
+                -0.7071058,
+                -0.0000213,
+                0.7071077
+            ],
+            "scaling": [
+                0.0274994,
+                0.0099999,
+                0.0174994
+            ],
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "89d0bf15-bbb6-4d6b-adc2-98ddaf94249c",
+                        "mesh": "9ed44fb4-748f-45b9-9209-36b22d0b2f32"
+                    }
+                }
+            ]
+        },
+        "8c4dfd32-ec7e-433c-bf02-7886cb1a94ef": {
+            "link": {
+                "name": "Wall_Line",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "58830762-368a-45de-9a71-e0ef50501dc9",
+            "translation": [
+                -12.9510965,
+                -0.0833309,
+                31.2499542
+            ],
+            "rotation": [
+                2.6692545063156103e-8,
+                -0.7071068,
+                -2.6692548615869786e-8,
+                0.7071067
+            ],
+            "scaling": [
+                0.027,
+                0.0149999,
+                0.017
+            ],
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "410a4498-85fc-46a6-90a5-b8d88a720fe1",
+                        "mesh": "bd433419-f44d-48fa-a891-6b9489029829"
+                    }
+                }
+            ]
+        },
+        "d287d6ad-1390-4f90-807e-ec101887b8d9": {
+            "link": {
+                "name": "TV",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "58830762-368a-45de-9a71-e0ef50501dc9",
+            "translation": [
+                -12.9510965,
+                -0.0833309,
+                31.2499542
+            ],
+            "rotation": [
+                2.6692545063156103e-8,
+                -0.7071068,
+                -2.6692548615869786e-8,
+                0.7071067
+            ],
+            "scaling": [
+                0.027,
+                0.0149999,
+                0.017
+            ]
+        },
+        "5574dc84-57e7-495b-b345-cc94835a68fb": {
+            "link": {
+                "name": "Magazine",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "58830762-368a-45de-9a71-e0ef50501dc9",
+            "translation": [
+                -14.0225524,
+                -0.0833309,
+                31.2499389
+            ],
+            "rotation": [
+                2.6692545063156103e-8,
+                -0.7071068,
+                -2.6692548615869786e-8,
+                0.7071067
+            ],
+            "scaling": [
+                0.027,
+                0.0149999,
+                0.017
+            ],
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "4c5d1351-1a85-4c9c-a308-e2d20ed94778",
+                        "mesh": "8024e429-5ba6-4dfe-a19c-8a237fc79ca5"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "44e908a8-78c8-48fd-9415-a149be336f56",
+                        "mesh": "5e4ce09c-7082-4e68-b150-91101e4687ee"
+                    }
+                }
+            ]
+        },
+        "2c202041-b317-4e0c-a5c2-afa0af54768a": {
+            "link": {
+                "name": "Office_Chair",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "58830762-368a-45de-9a71-e0ef50501dc9",
+            "translation": [
+                -12.9510965,
+                -0.0833309,
+                31.2499542
+            ],
+            "rotation": [
+                2.6692545063156103e-8,
+                -0.7071068,
+                -2.6692548615869786e-8,
+                0.7071067
+            ],
+            "scaling": [
+                0.027,
+                0.0149999,
+                0.017
+            ],
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "54dfe506-427e-4afe-9af3-27f8c7d55875",
+                        "mesh": "b59de6ac-dcc4-4f26-b8fe-5da5f4dd296a"
+                    }
+                }
+            ]
+        },
+        "323276dd-745b-4332-b3a8-f8957068308c": {
+            "link": {
+                "name": "ComputerAndMonitor",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "58830762-368a-45de-9a71-e0ef50501dc9",
+            "translation": [
+                -14.0225524,
+                -0.0833309,
+                31.2499389
+            ],
+            "rotation": [
+                2.6692545063156103e-8,
+                -0.7071068,
+                -2.6692548615869786e-8,
+                0.7071067
+            ],
+            "scaling": [
+                0.027,
+                0.0149999,
+                0.017
+            ]
+        },
+        "bbb7a8f9-c75e-46c1-98b3-673a0664684b": {
+            "link": {
+                "name": "FlippedTVScreen",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "58830762-368a-45de-9a71-e0ef50501dc9",
+            "translation": [
+                -12.9510965,
+                -0.0833309,
+                31.2499542
+            ],
+            "rotation": [
+                2.6692545063156103e-8,
+                -0.7071068,
+                -2.6692548615869786e-8,
+                0.7071067
+            ],
+            "scaling": [
+                0.027,
+                0.0149999,
+                0.017
+            ],
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "4c8f5b88-f31b-44d9-ad30-e250fd067acb",
+                        "mesh": "8e1ce570-0139-4211-be47-6b59084b918d"
+                    }
+                }
+            ]
+        },
+        "b339a358-aab1-471e-9489-fc5420313aa1": {
+            "link": {
+                "name": "Wall",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "58830762-368a-45de-9a71-e0ef50501dc9",
+            "translation": [
+                -12.9510965,
+                -0.0833309,
+                31.2499542
+            ],
+            "rotation": [
+                -0.0,
+                -0.7071068,
+                -1.053671283557378e-7,
+                0.7071067
+            ],
+            "scaling": [
+                0.027,
+                0.023,
+                0.017
+            ]
+        },
+        "ba48d37e-fcb5-4341-a28b-407f1dcba2f3": {
+            "link": {
+                "name": "polySurface82",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "parent": "58830762-368a-45de-9a71-e0ef50501dc9",
+            "translation": [
+                -12.9510965,
+                -0.0833309,
+                31.2499542
+            ],
+            "rotation": [
+                2.6692545063156103e-8,
+                -0.7071068,
+                -2.6692548615869786e-8,
+                0.7071067
+            ],
+            "scaling": [
+                0.027,
+                0.0149999,
+                0.017
+            ],
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "fbae8217-97df-4ae8-bc61-d05c5399ce5d",
+                        "mesh": "c3d1720e-93d3-4d14-86ff-f6e841fbfc21"
+                    }
+                }
             ]
         }
     },
@@ -8789,6 +9547,306 @@
                 "name": "mesh_18",
                 "file": "assets\\basketball_court_fbx\\Basketball Court fbx\\Basketball Court.fbx"
             }
+        },
+        "7c9db26f-006b-495f-bb4c-e6d749d0370f": {
+            "link": {
+                "name": "mesh_0",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            }
+        },
+        "e9b1d527-473e-4574-bc69-abd4737b6d47": {
+            "link": {
+                "name": "mesh_1",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            }
+        },
+        "4817f1ca-d403-4517-96cc-a377adc1421a": {
+            "link": {
+                "name": "mesh_2",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            }
+        },
+        "e6c28ae1-17ad-42ca-af0a-05d7e6297301": {
+            "link": {
+                "name": "mesh_3",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            }
+        },
+        "2f54659b-01d6-4544-bd1d-9c705ec7b285": {
+            "link": {
+                "name": "mesh_4",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            }
+        },
+        "fc466922-01a9-45bb-a379-6df8c213b857": {
+            "link": {
+                "name": "mesh_5",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            }
+        },
+        "6e67ebce-624b-4b05-a898-49f1b8a761d3": {
+            "link": {
+                "name": "mesh_6",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            }
+        },
+        "68023fe1-e3f6-4e1c-9d68-a254f3c7f904": {
+            "link": {
+                "name": "mesh_7",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            }
+        },
+        "bb8ecf62-7f91-45aa-8995-725474bed89d": {
+            "link": {
+                "name": "mesh_8",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            }
+        },
+        "de56e4bc-6545-4816-a5b5-c97e3592c756": {
+            "link": {
+                "name": "mesh_9",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            }
+        },
+        "01d57b74-0e60-4a70-ab98-a6dea48b4d87": {
+            "link": {
+                "name": "mesh_0",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "25d09149-40f1-4ba9-b38d-a0efb2cfe961": {
+            "link": {
+                "name": "mesh_1",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "08582d98-d346-4dc5-b658-9e3d18705ee9": {
+            "link": {
+                "name": "mesh_2",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "bf3bf6d2-6ce3-418e-a9b7-14a7addc4c65": {
+            "link": {
+                "name": "mesh_3",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "2c5c3622-ef97-4844-a314-9ae2ab376a88": {
+            "link": {
+                "name": "mesh_4",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "ac341023-409b-4bda-b7af-852085a92771": {
+            "link": {
+                "name": "mesh_5",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "5288ab5f-c966-425d-af03-09a45ac48917": {
+            "link": {
+                "name": "mesh_6",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "ab176eb0-3ad8-4e77-866e-241e14261a1e": {
+            "link": {
+                "name": "mesh_7",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "639c5513-be77-4868-907a-c5d4c27f5ec6": {
+            "link": {
+                "name": "mesh_8",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "c858f78c-2782-4c73-80db-c11922491591": {
+            "link": {
+                "name": "mesh_9",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "c6513f8a-242c-45ea-a3de-83420eb12ee1": {
+            "link": {
+                "name": "mesh_10",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "f1426074-4eba-4cdc-86ce-032f568773b3": {
+            "link": {
+                "name": "mesh_11",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "26fb3b12-dcd0-49d1-92af-0c82ac69c9d7": {
+            "link": {
+                "name": "mesh_12",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "088c27a6-52d0-43ce-98e5-e141761d719a": {
+            "link": {
+                "name": "mesh_13",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "3ae581bb-6ace-4822-9447-dd78d067d998": {
+            "link": {
+                "name": "mesh_14",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "38fbffc7-4fa3-4887-b9c1-2e2b3373838e": {
+            "link": {
+                "name": "mesh_15",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "49e09ec8-4a94-41ab-83d7-95e8cd617507": {
+            "link": {
+                "name": "mesh_16",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "8362bd27-0cde-44a8-ad24-5d0625bc3f05": {
+            "link": {
+                "name": "mesh_17",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "2e7a4745-cbe8-4741-9b09-b990030fc73e": {
+            "link": {
+                "name": "mesh_18",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "5263740b-ef99-4cc8-a088-48bd33eff116": {
+            "link": {
+                "name": "mesh_19",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "d7910f6c-b0e1-47c3-a785-54e43dc95ab0": {
+            "link": {
+                "name": "mesh_20",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "1dc7bb52-e2ea-47ee-a68a-5dc7df294799": {
+            "link": {
+                "name": "mesh_21",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "f6491919-9b71-487b-a6e0-d9623ca5cef5": {
+            "link": {
+                "name": "mesh_22",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "d047f658-ee7b-47d9-b6df-87566430a758": {
+            "link": {
+                "name": "mesh_23",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "b9b5beef-4e3d-4793-827f-8c834c7486e3": {
+            "link": {
+                "name": "mesh_24",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "56c30942-5e9e-427a-8914-0438cd655d6c": {
+            "link": {
+                "name": "mesh_25",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "738ea7b2-1bbe-4789-a702-f753ca4a28de": {
+            "link": {
+                "name": "mesh_26",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "80551995-a503-4b63-8d6b-3ac4d95eae89": {
+            "link": {
+                "name": "mesh_27",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "9ed44fb4-748f-45b9-9209-36b22d0b2f32": {
+            "link": {
+                "name": "mesh_28",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "1990dc14-efb3-47a5-85ec-a637ed9d6350": {
+            "link": {
+                "name": "mesh_29",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "d03ba703-6d3b-4d76-8ffa-4b064ac4cd75": {
+            "link": {
+                "name": "mesh_30",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "bd433419-f44d-48fa-a891-6b9489029829": {
+            "link": {
+                "name": "mesh_31",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "36b1dd67-cbb2-4d55-829c-eecb4056ff64": {
+            "link": {
+                "name": "mesh_32",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "8024e429-5ba6-4dfe-a19c-8a237fc79ca5": {
+            "link": {
+                "name": "mesh_33",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "5e4ce09c-7082-4e68-b150-91101e4687ee": {
+            "link": {
+                "name": "mesh_34",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "b59de6ac-dcc4-4f26-b8fe-5da5f4dd296a": {
+            "link": {
+                "name": "mesh_35",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "288b1851-9d35-4bd4-afd1-abbbe9283e0b": {
+            "link": {
+                "name": "mesh_36",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "8e1ce570-0139-4211-be47-6b59084b918d": {
+            "link": {
+                "name": "mesh_37",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "af70b33b-61ba-4c96-887d-30303cdb56c6": {
+            "link": {
+                "name": "mesh_38",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "c3d1720e-93d3-4d14-86ff-f6e841fbfc21": {
+            "link": {
+                "name": "mesh_39",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
         }
     },
     "images": {
@@ -8936,6 +9994,18 @@
             "link": {
                 "name": "basketball_court_texture.png",
                 "file": "assets\\basketball_court_fbx\\textures\\basketball_court_texture.png"
+            }
+        },
+        "4e9c6119-773b-4847-8752-96fa8071fd1f": {
+            "link": {
+                "name": "Tiling_floor_BaseColor.tga.png",
+                "file": "assets\\hospital-reception-environment\\textures\\Tiling_floor_BaseColor.tga.png"
+            }
+        },
+        "09be7655-bd04-420f-9c6f-e7d22b71aa25": {
+            "link": {
+                "name": "Tiling_Wall_BaseColor.tga.png",
+                "file": "assets\\hospital-reception-environment\\textures\\Tiling_Wall_BaseColor.tga.png"
             }
         }
     },
@@ -9088,6 +10158,18 @@
             "link": {
                 "name": "base_color_texture",
                 "file": "assets\\basketball_court_fbx\\Basketball Court fbx\\Basketball Court.fbx"
+            }
+        },
+        "55834117-808a-4469-9c69-e34f11b8bd6f": {
+            "link": {
+                "name": "Tiling_floor_BaseColor.tga.png",
+                "file": "assets\\hospital-reception-environment\\textures\\Tiling_floor_BaseColor.tga.png"
+            }
+        },
+        "3d02d991-799c-4fe0-9f00-610330ea03dc": {
+            "link": {
+                "name": "Tiling_Wall_BaseColor.tga.png",
+                "file": "assets\\hospital-reception-environment\\textures\\Tiling_Wall_BaseColor.tga.png"
             }
         }
     },
@@ -9316,9 +10398,9 @@
             "pipeline": "313227a6-182e-4b31-9838-632a9291f4d2",
             "Phong": {
                 "ambientColor": [
-                    0.5,
-                    0.5,
-                    0.5,
+                    0.8823529,
+                    0.6786077,
+                    0.3875432,
                     1.0
                 ]
             }
@@ -10014,6 +11096,21 @@
             "link": {
                 "name": "Mat",
                 "file": "assets\\keycard-scanner\\source\\keycard.fbx"
+            },
+            "pipeline": "313227a6-182e-4b31-9838-632a9291f4d2",
+            "Phong": {
+                "diffuseColor": [
+                    0.1593233,
+                    0.1972671,
+                    0.2745097,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.8784313,
+                    0.6304036,
+                    0.6304036,
+                    1.0
+                ]
             }
         },
         "363193d4-d85f-4c34-8252-08f391a31338": {
@@ -10076,6 +11173,28 @@
             "link": {
                 "name": "Bark",
                 "file": "assets\\tree_animate\\scene.gltf"
+            },
+            "Phong": {
+                "diffuseTexture": "d839fe98-68a3-4e89-b562-af5bb42ae8ce",
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "specularColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "normalTexture": "f3f8ee64-9d60-41a8-b5c1-f591df5b4e4f",
+                "ambientColor": [
+                    0.5490195,
+                    0.5490195,
+                    0.5490195,
+                    1.0
+                ]
             }
         },
         "4c8f5b88-f31b-44d9-ad30-e250fd067acb": {
@@ -10200,6 +11319,23 @@
             "link": {
                 "name": "lambert2",
                 "file": "assets\\street_lamp.glb"
+            },
+            "Phong": {
+                "diffuseTexture": "55834117-808a-4469-9c69-e34f11b8bd6f",
+                "normalTexture": "55834117-808a-4469-9c69-e34f11b8bd6f",
+                "shininess": 0,
+                "ambientColor": [
+                    0.462745,
+                    0.4355247,
+                    0.4355247,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
             }
         },
         "39d9df19-8c72-42af-8aa8-ba8d3d631dd9": {
@@ -10403,6 +11539,240 @@
                 "name": "fence_stand",
                 "file": "assets\\basketball_court_fbx\\Basketball Court fbx\\Basketball Court.fbx"
             }
+        },
+        "0cbbae24-4390-4074-9fc4-8d76fbce85a2": {
+            "link": {
+                "name": "Material.002",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            }
+        },
+        "e34a2381-8e44-46ea-9c15-7fdcdea95f14": {
+            "link": {
+                "name": "Material.004",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            }
+        },
+        "668104f2-b5ad-479d-832e-4d2090806963": {
+            "link": {
+                "name": "Material.007",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            }
+        },
+        "a1db2200-8fd6-4ed4-8a32-b33b5c66a63e": {
+            "link": {
+                "name": "Material.003",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.1742098,
+                    0.2692568,
+                    0.462745,
+                    1.0
+                ],
+                "specularColor": [
+                    0.1395842,
+                    0.1395852,
+                    0.1395851,
+                    0.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "shininess": 25
+            }
+        },
+        "fbae8217-97df-4ae8-bc61-d05c5399ce5d": {
+            "link": {
+                "name": "Material.005",
+                "file": "assets\\basketcourt\\source\\basketcourt.fbx"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    0.567066,
+                    0.3803921,
+                    1.0
+                ],
+                "specularColor": [
+                    0.2368253,
+                    0.0784972,
+                    0.0102288,
+                    0.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "shininess": 25
+            }
+        },
+        "20bba25e-9dc6-48a8-99d5-9b375e068498": {
+            "link": {
+                "name": "Modular_props1",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "863ec61f-2438-46e5-abb7-9c0faea7bca9": {
+            "link": {
+                "name": "Tiling_Wall",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "pipeline": "89a3238c-ae6c-41f3-a9af-4fd4c6e1564b",
+            "Phong": {
+                "ambientColor": [
+                    0.7742714,
+                    0.8187857,
+                    0.9921568,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.4,
+                    0.4,
+                    0.4,
+                    1.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "diffuseTexture": null
+            }
+        },
+        "01b9753a-dc79-4daf-a095-a939f24cbcb8": {
+            "link": {
+                "name": "Modular_props2",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "pipeline": "89a3238c-ae6c-41f3-a9af-4fd4c6e1564b",
+            "Phong": {
+                "ambientColor": [
+                    0.772549,
+                    0.8196078,
+                    0.9921568,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.4,
+                    0.4,
+                    0.4,
+                    1.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "diffuseTexture": null
+            }
+        },
+        "a0862e1c-0906-4cdf-852f-669bf9b76fdc": {
+            "link": {
+                "name": "Desk_Wood",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "5a5eeb6b-9602-4ce8-8a74-a6851aff29ed": {
+            "link": {
+                "name": "Desk_Material",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "5593261f-16a5-46ab-b692-04a3fd3d126e": {
+            "link": {
+                "name": "Wheelchair1",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "89d0bf15-bbb6-4d6b-adc2-98ddaf94249c": {
+            "link": {
+                "name": "Tiling_floor",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "pipeline": "313227a6-182e-4b31-9838-632a9291f4d2",
+            "Flat": {
+                "color": [
+                    0.5867128,
+                    0.7590555,
+                    0.9529411,
+                    1.0
+                ],
+                "flatTexture": null
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.4828296,
+                    0.5367078,
+                    0.7372548,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.6496578,
+                    0.6902695,
+                    0.7019608,
+                    1.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "normalTexture": "8deff1fe-d7f7-410e-af0f-e16e88df29d8",
+                "diffuseTexture": null
+            }
+        },
+        "4c0dcaa0-ec8c-4482-bbf5-420b41d937f6": {
+            "link": {
+                "name": "Modular_props3",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            }
+        },
+        "4c5d1351-1a85-4c9c-a308-e2d20ed94778": {
+            "link": {
+                "name": "Magazine_Covers",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.7019608,
+                    0.6744329,
+                    0.6744329,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.3042061,
+                    0.5137255,
+                    0.3929437,
+                    1.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
         }
     },
     "animations": {
@@ -10416,6 +11786,12 @@
             "link": {
                 "name": "CINEMA_4D_Principal",
                 "file": "assets\\keycard-scanner\\source\\keycard.fbx"
+            }
+        },
+        "38e15636-95e1-4eed-b8fd-6df394ddbf05": {
+            "link": {
+                "name": "Take 001",
+                "file": "assets\\hospital-reception-environment\\source\\Environment Export.fbx"
             }
         }
     },
@@ -10721,6 +12097,24 @@
             "fileName": "assets/basketball_court_fbx/Basketball Court fbx/Basketball Court.fbx",
             "importerName": "",
             "importPhysicalAsPhongMaterials": true
+        },
+        "d9f3b19f-f89e-4b67-a2a5-f96af74ecf2f": {
+            "fileName": "assets/basketcourt/source/basketcourt.fbx",
+            "importerName": "",
+            "importPhysicalAsPhongMaterials": true
+        },
+        "fe0cb81c-5659-4a6c-a761-d90f343934be": {
+            "fileName": "assets/hospital-reception-environment/source/Environment Export.fbx",
+            "importerName": "",
+            "importPhysicalAsPhongMaterials": true
+        },
+        "c5de9bc3-e271-4f73-81d4-fddc56d2c738": {
+            "fileName": "assets/hospital-reception-environment/textures/Tiling_floor_BaseColor.tga.png",
+            "importerName": ""
+        },
+        "cca1c995-7a44-4481-a90c-d4c69eefbae9": {
+            "fileName": "assets/hospital-reception-environment/textures/Tiling_Wall_BaseColor.tga.png",
+            "importerName": ""
         }
     },
     "languages": {},
