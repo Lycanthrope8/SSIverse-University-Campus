@@ -907,105 +907,279 @@
         function showSignupContent() {
             walletContent.innerHTML = `
                 <div class="wallet-form-group">
-                    <label class="wallet-label">Create Wallet Name</label>
-                    <input type="text" class="wallet-input" id="signup-name" placeholder="Enter a name for your wallet">
+                    <label class="wallet-label">Full Name</label>
+                    <input type="text" class="wallet-input" id="signup-fullname" placeholder="Enter your full name">
                 </div>
                 <div class="wallet-form-group">
-                    <label class="wallet-label">Create Passphrase</label>
+                    <label class="wallet-label">Email Address</label>
+                    <input type="email" class="wallet-input" id="signup-email" placeholder="Enter your email address">
+                </div>
+                <div class="wallet-form-group">
+                    <label class="wallet-label">University / Institution</label>
+                    <input type="text" class="wallet-input" id="signup-university" value="SSIverse University" readonly style="background: #1a1a1a; color: #888;">
+                </div>
+                <div class="wallet-form-group">
+                    <label class="wallet-label">Passphrase</label>
                     <input type="password" class="wallet-input" id="signup-password" placeholder="Create a secure passphrase">
                 </div>
-                <div class="wallet-form-group">
-                    <label class="wallet-label">Confirm Passphrase</label>
-                    <input type="password" class="wallet-input" id="signup-confirm" placeholder="Confirm your passphrase">
+                <button class="wallet-button" onclick="generateDID()" id="generate-did-btn">Generate DID</button>
+                <div class="wallet-form-group" id="did-display-group" style="display: none;">
+                    <label class="wallet-label">DID Address</label>
+                    <input type="text" class="wallet-input" id="generated-did" readonly style="background: #1a1a1a; color: #00ff88; font-family: monospace; font-size: 12px;">
                 </div>
-                <button class="wallet-button" onclick="handleSignup()">Create SSI Wallet</button>
-                <div class="wallet-info">
-                    A new decentralized identifier (DID) will be generated for you. Keep your passphrase safe!
-                </div>
+                <button class="wallet-button" onclick="createWallet()" id="create-wallet-btn" disabled style="opacity: 0.5; cursor: not-allowed;">Create Wallet</button>
             `;
         }
 
-        // Show authenticated wallet content
-        function showAuthenticatedContent() {
+        // Generate DID function
+        function generateDID() {
+            const fullname = document.getElementById('signup-fullname').value;
+            const email = document.getElementById('signup-email').value;
+            const password = document.getElementById('signup-password').value;
+            
+            if (fullname && email && password) {
+                // Show loading state for DID generation
+                const generateBtn = document.getElementById('generate-did-btn');
+                generateBtn.disabled = true;
+                generateBtn.textContent = 'Generating...';
+                
+                setTimeout(() => {
+                    // Generate a sample DID (placeholder for ACA-Py)
+                    const did = `did:ssi:${Math.random().toString(36).substr(2, 9)}`;
+                    
+                    // Show the DID
+                    document.getElementById('did-display-group').style.display = 'block';
+                    document.getElementById('generated-did').value = did;
+                    
+                    // Store temporarily
+                    walletState.tempDID = did;
+                    walletState.tempUserData = { fullname, email, password };
+                    
+                    // Enable create wallet button
+                    const createBtn = document.getElementById('create-wallet-btn');
+                    createBtn.disabled = false;
+                    createBtn.style.opacity = '1';
+                    createBtn.style.cursor = 'pointer';
+                    
+                    generateBtn.textContent = 'DID Generated ✓';
+                    generateBtn.style.background = '#00ff88';
+                    generateBtn.style.color = '#000';
+                }, 1500);
+            } else {
+                showErrorMessage('Please fill all fields before generating DID');
+            }
+        }
+
+        // Create wallet function
+        function createWallet() {
+            showLoadingState('Creating your wallet...');
+            
+            setTimeout(() => {
+                walletState.isAuthenticated = true;
+                walletState.did = walletState.tempDID;
+                walletState.userData = walletState.tempUserData;
+                
+                // Show credential request screen
+                showCredentialRequestScreen();
+            }, 2000);
+        }
+
+        // Show credential request screen
+        function showCredentialRequestScreen() {
             walletContent.innerHTML = `
+                <div style="text-align: center; padding: 20px 0;">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" style="width: 60px; height: 60px;">
+                        <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                        <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                    </svg>
+                    <h3 style="color: #00ff88; margin-top: 10px;">Wallet Created Successfully!</h3>
+                </div>
+                
                 <div class="wallet-section">
                     <h3 class="wallet-section-title">Your DID</h3>
-                    <div class="wallet-info">${walletState.did || 'did:ssi:generated'}</div>
+                    <div class="wallet-info" style="font-family: monospace; font-size: 13px; word-break: break-all;">${walletState.did}</div>
                 </div>
                 
                 <div class="wallet-section">
-                    <h3 class="wallet-section-title">Credentials</h3>
-                    <div class="credential-list" id="credential-list">
-                        <div class="credential-item">
-                            <span class="credential-name">University Student ID</span>
-                            <span class="credential-status">Verified</span>
-                        </div>
+                    <h3 class="wallet-section-title">Request Credential</h3>
+                    <div class="credential-item" style="margin-bottom: 16px;">
+                        <span class="credential-name">SSIverse University Student ID</span>
+                        <span class="credential-status" style="background: rgba(255, 170, 0, 0.1); color: #ffaa00;">Pending</span>
                     </div>
-                </div>
-                
-                <div class="wallet-section">
-                    <button class="wallet-button" onclick="enterMetaverse()">Enter Metaverse</button>
+                    <button class="wallet-button" onclick="requestCredential()">Request Credential</button>
                 </div>
             `;
         }
 
-        // Handle login
-        function handleLogin() {
+        // Request credential function
+        function requestCredential() {
+            showLoadingState('Requesting credential from SSIverse University...');
+            
+            setTimeout(() => {
+                // Simulate credential issuance
+                walletState.credentials.push({
+                    type: 'University Student ID',
+                    issuer: 'SSIverse University',
+                    status: 'Verified',
+                    issuedAt: new Date().toISOString()
+                });
+                
+                showSuccessState('Credential Issued Successfully!');
+                
+                setTimeout(() => {
+                    showAuthenticatedContent();
+                }, 1500);
+            }, 2000);
+        }
+
+        // Show login content
+        function showLoginContent() {
+            walletContent.innerHTML = `
+                <div class="wallet-form-group">
+                    <label class="wallet-label">DID</label>
+                    <input type="text" class="wallet-input" id="login-did" placeholder="did:ssi:xxxxx" style="font-family: monospace; font-size: 13px;">
+                </div>
+                <div class="wallet-form-group">
+                    <label class="wallet-label">Passphrase</label>
+                    <input type="password" class="wallet-input" id="login-password" placeholder="Enter your passphrase">
+                </div>
+                <button class="wallet-button" onclick="authenticateDID()">Authenticate</button>
+                <div class="wallet-divider">
+                    <span>or</span>
+                </div>
+                <button class="wallet-button" style="background: #444;" onclick="scanQRCode()">Scan QR Code</button>
+            `;
+        }
+
+        // Authenticate DID function
+        function authenticateDID() {
             const did = document.getElementById('login-did').value;
             const password = document.getElementById('login-password').value;
             
             if (did && password) {
-                // Show loading state
                 showLoadingState('Authenticating...');
                 
-                // Simulate authentication delay
                 setTimeout(() => {
-                    // Placeholder for ACA-Py integration
                     walletState.isAuthenticated = true;
                     walletState.did = did;
                     
-                    // Show success animation
-                    showSuccessState('Authentication Successful!');
+                    // Mock credential data (would come from ACA-Py)
+                    walletState.credentials = [{
+                        type: 'University Student ID',
+                        issuer: 'SSIverse University',
+                        status: 'Verified',
+                        claims: {
+                            name: 'John Doe',
+                            studentId: 'STU-2024-001',
+                            program: 'Computer Science',
+                            level: 'Undergraduate'
+                        }
+                    }];
                     
-                    setTimeout(() => {
-                        showAuthenticatedContent();
-                    }, 1500);
+                    showCredentialSharingScreen();
                 }, 1500);
             } else {
                 showErrorMessage('Please enter both DID and passphrase');
             }
         }
 
-        // Handle signup
-        function handleSignup() {
-            const name = document.getElementById('signup-name').value;
-            const password = document.getElementById('signup-password').value;
-            const confirm = document.getElementById('signup-confirm').value;
-            
-            if (name && password && confirm) {
-                if (password === confirm) {
-                    // Show loading state
-                    showLoadingState('Creating your wallet...');
+        // Show credential sharing screen
+        function showCredentialSharingScreen() {
+            const credential = walletState.credentials[0];
+            walletContent.innerHTML = `
+                <div class="wallet-section">
+                    <h3 class="wallet-section-title">Your DID</h3>
+                    <div class="wallet-info" style="font-family: monospace; font-size: 13px; word-break: break-all;">${walletState.did}</div>
+                </div>
+                
+                <div class="wallet-section">
+                    <h3 class="wallet-section-title">Select Credential to Share</h3>
+                    <div class="credential-item" style="border: 2px solid #00aaff; background: rgba(0, 170, 255, 0.05);">
+                        <div>
+                            <span class="credential-name">${credential.type}</span>
+                            <div style="font-size: 12px; color: #888; margin-top: 4px;">Issued by: ${credential.issuer}</div>
+                        </div>
+                        <span class="credential-status">Verified</span>
+                    </div>
                     
-                    // Simulate wallet creation
-                    setTimeout(() => {
-                        // Placeholder for ACA-Py wallet creation
-                        walletState.isAuthenticated = true;
-                        walletState.did = `did:ssi:${Math.random().toString(36).substr(2, 9)}`;
+                    <div class="wallet-info" style="margin-top: 16px;">
+                        <strong>Credential Details:</strong>
+                        <div style="margin-top: 8px; font-size: 13px; color: #ccc;">
+                            ${credential.claims ? `
+                                • Name: ${credential.claims.name}<br>
+                                • Student ID: ${credential.claims.studentId}<br>
+                                • Program: ${credential.claims.program}<br>
+                                • Level: ${credential.claims.level}
+                            ` : 'Standard University Credential'}
+                        </div>
+                    </div>
+                    
+                    <button class="wallet-button" onclick="shareCredential()" style="margin-top: 20px;">Share Credential</button>
+                </div>
+            `;
+        }
+
+        // Share credential function
+        function shareCredential() {
+            showLoadingState('Verifying credential...');
+            
+            setTimeout(() => {
+                showSuccessState('Credential Verified Successfully!');
+                
+                setTimeout(() => {
+                    // Show final authenticated view with Enter Metaverse button
+                    walletContent.innerHTML = `
+                        <div style="text-align: center; padding: 20px 0;">
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" style="width: 60px; height: 60px;">
+                                <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                                <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                            </svg>
+                            <h3 style="color: #00ff88; margin-top: 10px;">Identity Verified</h3>
+                            <p style="color: #888; margin-top: 10px;">You are authenticated as a verified student</p>
+                        </div>
                         
-                        // Show success with DID
-                        showSuccessState(`Wallet Created!<br><small style="color: #888;">Your DID: ${walletState.did}</small>`);
-                        
-                        setTimeout(() => {
-                            showAuthenticatedContent();
-                        }, 2000);
-                    }, 2000);
-                } else {
-                    showErrorMessage('Passphrases do not match');
-                }
-            } else {
-                showErrorMessage('Please fill all fields');
-            }
+                        <button class="wallet-button" onclick="enterMetaverse()" style="
+                            background: linear-gradient(135deg, #00ff88 0%, #00aaff 100%);
+                            font-size: 18px;
+                            padding: 16px;
+                            margin-top: 20px;
+                        ">Enter Metaverse</button>
+                    `;
+                }, 1500);
+            }, 2000);
+        }
+
+        // Show authenticated wallet content (after full authentication)
+        function showAuthenticatedContent() {
+            walletContent.innerHTML = `
+                <div class="wallet-section">
+                    <h3 class="wallet-section-title">Your DID</h3>
+                    <div class="wallet-info" style="font-family: monospace; font-size: 13px; word-break: break-all;">${walletState.did}</div>
+                </div>
+                
+                <div class="wallet-section">
+                    <h3 class="wallet-section-title">Your Credentials</h3>
+                    <div class="credential-list" id="credential-list">
+                        ${walletState.credentials.map(cred => `
+                            <div class="credential-item">
+                                <div>
+                                    <span class="credential-name">${cred.type}</span>
+                                    <div style="font-size: 12px; color: #888; margin-top: 4px;">Issued by: ${cred.issuer}</div>
+                                </div>
+                                <span class="credential-status">${cred.status}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+                
+                <div class="wallet-section">
+                    <button class="wallet-button" onclick="enterMetaverse()" style="
+                        background: linear-gradient(135deg, #00ff88 0%, #00aaff 100%);
+                        font-size: 18px;
+                        padding: 16px;
+                    ">Enter Metaverse</button>
+                </div>
+            `;
         }
 
         // Show loading state
