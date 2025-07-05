@@ -26,23 +26,33 @@ const waitWindowLoad: Promise<void> = new Promise((resolve: () => void) => {
 
 await waitWindowLoad;
 
-// Wait for user to click "Log In using Wallet"
+// Wait for user authentication (wallet login, signup, or guest)
 await new Promise<void>((resolve) => {
+  // Listen for wallet authentication
+  window.addEventListener("walletAuthenticated", (event: any) => {
+    console.log("User authenticated with DID:", event.detail.did);
+    // You can store the DID for later use in the metaverse
+    (window as any).userDID = event.detail.did;
+    resolve();
+  });
+
+  // Listen for guest login
+  window.addEventListener("guestLogin", () => {
+    console.log("User entered as guest");
+    (window as any).isGuest = true;
+    resolve();
+  });
+
+  // Legacy support for old login button (if it still exists)
   const loginBtn = document.getElementById("wallet-login-btn");
   if (loginBtn) {
+    // This is now handled by the wallet modal system
+    // But keeping this as fallback
     loginBtn.addEventListener("click", () => {
-      // Hide landing page and show canvas
-      const landing = document.getElementById("landing-page");
-      const canvas = document.getElementById("canvas") as HTMLCanvasElement;
-      if (canvas) canvas.style.display = "block";
-      if (landing) landing.style.display = "none";
-      resolve();
+      // The wallet modal will handle this now
     });
-  } else {
-    resolve(); // Fallback in case button is not found
   }
 });
-
 
 /* wle:auto-constants:start */
 const Constants = {
