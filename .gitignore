@@ -4,3 +4,4 @@
 /cache
 /deploy
 deployment.json
+.env
