@@ -884,8 +884,8 @@
         function showLoginContent() {
             walletContent.innerHTML = `
                 <div class="wallet-form-group">
-                    <label class="wallet-label">DID or Wallet ID</label>
-                    <input type="text" class="wallet-input" id="login-did" placeholder="did:ssi:xxxxx or wallet ID">
+                    <label class="wallet-label">Wallet ID</label>
+                    <input type="text" class="wallet-input" id="login-did" placeholder="Wallet ID">
                 </div>
                 <div class="wallet-form-group">
                     <label class="wallet-label">Passphrase</label>
@@ -1026,14 +1026,14 @@ function showCredentialRequestScreen() {
         function showLoginContent() {
             walletContent.innerHTML = `
                 <div class="wallet-form-group">
-                    <label class="wallet-label">DID</label>
-                    <input type="text" class="wallet-input" id="login-did" placeholder="did:ssi:xxxxx" style="font-family: monospace; font-size: 13px;">
+                    <label class="wallet-label">Wallet ID</label>
+                    <input type="text" class="wallet-input" id="login-wallet-id" placeholder="did:ssi:xxxxx" style="font-family: monospace; font-size: 13px;">
                 </div>
                 <div class="wallet-form-group">
-                    <label class="wallet-label">Passphrase</label>
-                    <input type="password" class="wallet-input" id="login-password" placeholder="Enter your passphrase">
+                    <label class="wallet-label">Access Token</label>
+                    <input type="password" class="wallet-input" id="login-access-token" placeholder="tenant.ey..........">
                 </div>
-                <button class="wallet-button" onclick="authenticateDID()">Authenticate</button>
+                <button class="wallet-button" onclick="authenticate()">Authenticate</button>
                 <div class="wallet-divider">
                     <span>or</span>
                 </div>
@@ -1041,45 +1041,71 @@ function showCredentialRequestScreen() {
             `;
         }
 
-        // Authenticate DID function
-        function authenticateDID() {
-            const did = document.getElementById('login-did').value;
-            const password = document.getElementById('login-password').value;
+        // Authenticate function - checks backend for wallet credentials
+        async function authenticate() {
+            const walletId = document.getElementById('login-wallet-id').value;
+            const accessToken = document.getElementById('login-access-token').value;
             
-            if (did && password) {
-                showLoadingState('Authenticating...');
+            if (!walletId || !accessToken) {
+                showErrorMessage('Please enter both Wallet ID and Access Token');
+                return;
+            }
+            
+            showLoadingState('Authenticating...');
+            
+            try {
+                // Check if wallet exists in backend
+                const response = await fetch(`http://localhost:5000/wallet/${walletId}`);
                 
-                setTimeout(() => {
-                    walletState.isAuthenticated = true;
-                    walletState.did = did;
-                    
-                    // Mock credential data (would come from ACA-Py)
-                    walletState.credentials = [{
-                        type: 'University Student ID',
-                        issuer: 'SSIverse University',
-                        status: 'Verified',
-                        claims: {
-                            name: 'John Doe',
-                            studentId: 'STU-2024-001',
-                            program: 'Computer Science',
-                            level: 'Undergraduate'
-                        }
-                    }];
-                    
-                    showCredentialSharingScreen();
-                }, 1500);
-            } else {
-                showErrorMessage('Please enter both DID and passphrase');
+                if (!response.ok) {
+                    if (response.status === 404) {
+                        showErrorMessage('Wallet ID not found');
+                    } else {
+                        showErrorMessage('Authentication failed');
+                    }
+                    return;
+                }
+                
+                const data = await response.json();
+                
+                // Verify access token matches
+                if (data.access_token !== accessToken) {
+                    showErrorMessage('Invalid access token');
+                    return;
+                }
+                
+                // Authentication successful
+                walletState.isAuthenticated = true;
+                walletState.wallet_id = walletId;
+                walletState.accessToken = accessToken;
+                
+                // Mock credential data (would come from ACA-Py)
+                walletState.credentials = [{
+                    type: 'University Student ID',
+                    issuer: 'SSIverse University',
+                    status: 'Verified',
+                    claims: {
+                        name: 'John Doe',
+                        studentId: 'STU-2024-001',
+                        program: 'Computer Science',
+                        level: 'Undergraduate'
+                    }
+                }];
+                
+                showCredentialSharingScreen();
+                
+            } catch (error) {
+                console.error('Authentication error:', error);
+                showErrorMessage('Network error. Please try again.');
             }
         }
-
-        // Show credential sharing screen
-        function showCredentialSharingScreen() {
+                // Show credential sharing screen
+                function showCredentialSharingScreen() {
             const credential = walletState.credentials[0];
             walletContent.innerHTML = `
                 <div class="wallet-section">
-                    <h3 class="wallet-section-title">Your DID</h3>
-                    <div class="wallet-info" style="font-family: monospace; font-size: 13px; word-break: break-all;">${walletState.did}</div>
+                    <h3 class="wallet-section-title">Wallet ID</h3>
+                    <div class="wallet-info" style="font-family: monospace; font-size: 13px; word-break: break-all;">${walletState.wallet_id}</div>
                 </div>
                 
                 <div class="wallet-section">
@@ -1180,7 +1206,7 @@ function showCredentialRequestScreen() {
                     <p style="color: #888; margin-top: 20px;">${message}</p>
                 </div>
             `;
-        }
+        }   
 
         // Show success state
         function showSuccessState(message) {
@@ -1197,6 +1223,9 @@ function showCredentialRequestScreen() {
 
         // Show error message
         function showErrorMessage(message) {
+            // Clear loading state and show login form again
+            showLoginContent();
+            
             // Create error toast
             const toast = document.createElement('div');
             toast.style.cssText = `
