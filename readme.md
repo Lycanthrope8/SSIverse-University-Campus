@@ -30,7 +30,7 @@ Choose one of the two setup options below based on your hardware availability an
 * Easier debugging and development
 * Production-ready architecture
 
-➡️ **[Follow Dual Machine Setup Guide](https://claude.ai/chat/DUAL_MACHINE_SETUP.md)**
+➡️ **[Follow Dual Machine Setup Guide](DUAL_MACHINE_SETUP.md)**
 
 ---
 
@@ -49,7 +49,7 @@ Choose one of the two setup options below based on your hardware availability an
 * Lower hardware requirements
 * Good for development and testing
 
-➡️ **[Follow Single Machine WSL Setup Guide](https://claude.ai/chat/WSL_SINGLE_MACHINE_SETUP.md)**
+➡️ **[Follow Single Machine WSL Setup Guide](WSL_SINGLE_MACHINE_SETUP.md)**
 
 ---
 
@@ -126,6 +126,5 @@ When contributing to this project:
 2. Test all functionality end-to-end
 3. Document any issues or improvements
 4. Follow the established development workflow for your chosen setup
-
 
 **Ready to get started?** Choose your setup option above and follow the detailed guide. Both paths will result in a fully functional SSI-enabled metaverse environment for research and development.
